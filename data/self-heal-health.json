@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "checked_at": "2026-09-30T20:56:12.683914+05:30",
+  "status_repairs": 4,
+  "sme_added": 0,
+  "filings": {
+    "checked": 21,
+    "verified": 13,
+    "repaired": 8
+  },
+  "upcoming_filing_map": 0,
+  "schedule": "every 15 minutes",
+  "open_upcoming_exclusive": true
+}

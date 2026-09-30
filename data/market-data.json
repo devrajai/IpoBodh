@@ -1,0 +1,494 @@
+{
+  "updated_at": "2026-09-30T15:23:40.737463+00:00",
+  "india": [
+    {
+      "name": "Nifty 50",
+      "symbol": "NIFTY 50",
+      "price": 22620.45,
+      "change": -95.75,
+      "change_pct": -0.42
+    },
+    {
+      "name": "Nifty Bank",
+      "symbol": "NIFTY BANK",
+      "price": 54633.05,
+      "change": 373.1,
+      "change_pct": 0.69
+    },
+    {
+      "name": "Nifty Next 50",
+      "symbol": "NIFTY NEXT 50",
+      "price": 69746.95,
+      "change": 286.75,
+      "change_pct": 0.41
+    },
+    {
+      "name": "India VIX",
+      "symbol": "INDIA VIX",
+      "price": 13.5,
+      "change": 0.09,
+      "change_pct": 0.61
+    },
+    {
+      "name": "Nifty Midcap 100",
+      "symbol": "NIFTY MIDCAP 100",
+      "price": 59332.05,
+      "change": 12.65,
+      "change_pct": 0.02
+    },
+    {
+      "name": "Nifty Smallcap 100",
+      "symbol": "NIFTY SMALLCAP 100",
+      "price": 19245.7,
+      "change": 52.15,
+      "change_pct": 0.27
+    },
+    {
+      "name": "Nifty It",
+      "symbol": "NIFTY IT",
+      "price": 27704.8,
+      "change": 34.8,
+      "change_pct": 0.13
+    },
+    {
+      "name": "Nifty Auto",
+      "symbol": "NIFTY AUTO",
+      "price": 26293.95,
+      "change": 120.6,
+      "change_pct": 0.46
+    },
+    {
+      "name": "Nifty Pharma",
+      "symbol": "NIFTY PHARMA",
+      "price": 26438,
+      "change": -495.65,
+      "change_pct": -1.84
+    },
+    {
+      "name": "Nifty Fmcg",
+      "symbol": "NIFTY FMCG",
+      "price": 44508.45,
+      "change": -281.85,
+      "change_pct": -0.63
+    },
+    {
+      "name": "Nifty Metal",
+      "symbol": "NIFTY METAL",
+      "price": 12760.5,
+      "change": -193.95,
+      "change_pct": -1.5
+    },
+    {
+      "name": "Nifty Energy",
+      "symbol": "NIFTY ENERGY",
+      "price": 36636,
+      "change": 126.25,
+      "change_pct": 0.35
+    },
+    {
+      "name": "Nifty Realty",
+      "symbol": "NIFTY REALTY",
+      "price": 847.35,
+      "change": 13.5,
+      "change_pct": 1.62
+    },
+    {
+      "name": "Nifty Media",
+      "symbol": "NIFTY MEDIA",
+      "price": 1583.2,
+      "change": 42.25,
+      "change_pct": 2.74
+    }
+  ],
+  "world": [
+    {
+      "price": 6276.02,
+      "change": -44.24,
+      "change_pct": -0.7,
+      "name": "Euro Stoxx 50",
+      "symbol": "^STOXX50E"
+    }
+  ],
+  "commodities": [
+    {
+      "price": 4196.0,
+      "change": 16.3,
+      "change_pct": 0.39,
+      "name": "Gold ($/oz)",
+      "symbol": "GC=F"
+    },
+    {
+      "price": 91.49,
+      "change": 2.11,
+      "change_pct": 2.36,
+      "name": "Crude WTI ($/bbl)",
+      "symbol": "CL=F"
+    }
+  ],
+  "fx": [
+    {
+      "name": "USD/INR",
+      "symbol": "USDINR",
+      "price": 95.83,
+      "change": null,
+      "change_pct": null
+    }
+  ],
+  "derived": {
+    "gold_inr_per_10g": 129278.92
+  },
+  "sheet_listed_ipos": [
+    [
+      "INDIA IPO TRACKER QUICK STATS",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Currently Open IPOs",
+      "9",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Upcoming IPOs",
+      "16",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Closed (awaiting listing)",
+      "22",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Listed (all-time archive)",
+      "92",
+      "",
+      "",
+      ""
+    ],
+    [
+      "SETUP INSTRUCTIONS - one time, about 5 minutes",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "1",
+      "In this spreadsheet, click: Extensions > Apps Script",
+      "",
+      "",
+      ""
+    ],
+    [
+      "2",
+      "Delete any code shown, and paste the ENTIRE script from the file 'IPO_Tracker_AppsScript.gs' (shared in the chat)",
+      "",
+      "",
+      ""
+    ],
+    [
+      "3",
+      "Click the Save (floppy disk) icon",
+      "",
+      "",
+      ""
+    ],
+    [
+      "4",
+      "In the toolbar dropdown, select the function 'updateAll' and click Run",
+      "",
+      "",
+      ""
+    ],
+    [
+      "5",
+      "Google will ask for authorization: Review permissions > choose your account > Advanced > Go to project > Allow",
+      "",
+      "",
+      ""
+    ],
+    [
+      "6",
+      "If the first run filled the tabs with data, it works. If there is an error, note the message and ask in chat",
+      "",
+      "",
+      ""
+    ],
+    [
+      "7",
+      "For automation: in the left sidebar of the Apps Script editor, click the clock icon (Triggers)",
+      "",
+      "",
+      ""
+    ],
+    [
+      "8",
+      "Add Trigger > function: updateAll > event source: Time-driven > type: Day timer > 8am to 9am > Save",
+      "",
+      "",
+      ""
+    ],
+    [
+      "DONE - the sheet now updates itself every morning automatically. No AI, no cost, no server.",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "NOTES",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Data sources: Chittorgarh / NSE India. GMP is unofficial grey-market data and can be manipulated - verify with the RHP before investing.",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "If a website changes its layout, the script may need a fix - come back to the chat and ask for an updated version.",
+      "",
+      "",
+      "DIAGNOSTICS",
+      ""
+    ],
+    [
+      "Last automated run",
+      "18/09/2026 16:21 - 42 IPOs found | fundamentals refreshed | sheets synced",
+      "",
+      "Mainboard [https://www.chittorgarh.com/] OK: 155206 chars, 48 rows scanned, 35 IPO rows matched",
+      ""
+    ],
+    [
+      "",
+      "",
+      "",
+      "Mainboard [https://www.chittorgarh.com/ipo/ipo_dashboard.asp] OK: 149933 chars, 44 rows scanned, 7 IPO rows matched",
+      ""
+    ],
+    [
+      "",
+      "",
+      "",
+      "SME [https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme] OK: 150537 chars, 44 rows scanned, 0 IPO rows matched",
+      ""
+    ],
+    [
+      "",
+      "",
+      "",
+      "PT Mainboard sample: [Company Name | Listed On | Issue Price | Listing Day Close | Listing Day Gain | Current Price | Profit/Loss]",
+      ""
+    ],
+    [
+      "",
+      "",
+      "",
+      "Listed Mainboard [https://www.chittorgarh.com/ipo/ipo_perf_tracker.asp] OK: 83 rows scanned, 0 moved, 0 added",
+      ""
+    ],
+    [
+      "",
+      "",
+      "",
+      "PT SME sample: [Company Name | Listed On | Issue Price | Listing Day Close | Listing Day Gain | Current Price | Profit/Loss]",
+      ""
+    ],
+    [
+      "",
+      "",
+      "",
+      "Listed SME [https://www.chittorgarh.com/ipo/ipo_perf_tracker.asp?exchange=sme] OK: 143 rows scanned, 0 moved, 0 added",
+      ""
+    ]
+  ],
+  "sheet_corporate_actions": [
+    [
+      "INDIA IPO TRACKER QUICK STATS",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Currently Open IPOs",
+      "9",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Upcoming IPOs",
+      "16",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Closed (awaiting listing)",
+      "22",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Listed (all-time archive)",
+      "92",
+      "",
+      "",
+      ""
+    ],
+    [
+      "SETUP INSTRUCTIONS - one time, about 5 minutes",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "1",
+      "In this spreadsheet, click: Extensions > Apps Script",
+      "",
+      "",
+      ""
+    ],
+    [
+      "2",
+      "Delete any code shown, and paste the ENTIRE script from the file 'IPO_Tracker_AppsScript.gs' (shared in the chat)",
+      "",
+      "",
+      ""
+    ],
+    [
+      "3",
+      "Click the Save (floppy disk) icon",
+      "",
+      "",
+      ""
+    ],
+    [
+      "4",
+      "In the toolbar dropdown, select the function 'updateAll' and click Run",
+      "",
+      "",
+      ""
+    ],
+    [
+      "5",
+      "Google will ask for authorization: Review permissions > choose your account > Advanced > Go to project > Allow",
+      "",
+      "",
+      ""
+    ],
+    [
+      "6",
+      "If the first run filled the tabs with data, it works. If there is an error, note the message and ask in chat",
+      "",
+      "",
+      ""
+    ],
+    [
+      "7",
+      "For automation: in the left sidebar of the Apps Script editor, click the clock icon (Triggers)",
+      "",
+      "",
+      ""
+    ],
+    [
+      "8",
+      "Add Trigger > function: updateAll > event source: Time-driven > type: Day timer > 8am to 9am > Save",
+      "",
+      "",
+      ""
+    ],
+    [
+      "DONE - the sheet now updates itself every morning automatically. No AI, no cost, no server.",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "NOTES",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Data sources: Chittorgarh / NSE India. GMP is unofficial grey-market data and can be manipulated - verify with the RHP before investing.",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "If a website changes its layout, the script may need a fix - come back to the chat and ask for an updated version.",
+      "",
+      "",
+      "DIAGNOSTICS",
+      ""
+    ],
+    [
+      "Last automated run",
+      "18/09/2026 16:21 - 42 IPOs found | fundamentals refreshed | sheets synced",
+      "",
+      "Mainboard [https://www.chittorgarh.com/] OK: 155206 chars, 48 rows scanned, 35 IPO rows matched",
+      ""
+    ],
+    [
+      "",
+      "",
+      "",
+      "Mainboard [https://www.chittorgarh.com/ipo/ipo_dashboard.asp] OK: 149933 chars, 44 rows scanned, 7 IPO rows matched",
+      ""
+    ],
+    [
+      "",
+      "",
+      "",
+      "SME [https://www.chittorgarh.com/ipo/ipo_dashboard.asp?a=sme] OK: 150537 chars, 44 rows scanned, 0 IPO rows matched",
+      ""
+    ],
+    [
+      "",
+      "",
+      "",
+      "PT Mainboard sample: [Company Name | Listed On | Issue Price | Listing Day Close | Listing Day Gain | Current Price | Profit/Loss]",
+      ""
+    ],
+    [
+      "",
+      "",
+      "",
+      "Listed Mainboard [https://www.chittorgarh.com/ipo/ipo_perf_tracker.asp] OK: 83 rows scanned, 0 moved, 0 added",
+      ""
+    ],
+    [
+      "",
+      "",
+      "",
+      "PT SME sample: [Company Name | Listed On | Issue Price | Listing Day Close | Listing Day Gain | Current Price | Profit/Loss]",
+      ""
+    ],
+    [
+      "",
+      "",
+      "",
+      "Listed SME [https://www.chittorgarh.com/ipo/ipo_perf_tracker.asp?exchange=sme] OK: 143 rows scanned, 0 moved, 0 added",
+      ""
+    ]
+  ]
+}
