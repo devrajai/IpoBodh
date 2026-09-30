@@ -1,0 +1,62 @@
+name: IPO data manual patch (29 Sep 2026)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: ipo-data-refresh
+  cancel-in-progress: false
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Apply Day-2 close data for 4 IPOs closing 29 Sep
+        run: |
+          python3 - <<'PY'
+          import json
+          path = 'data/ipo-data.json'
+          d = json.load(open(path, encoding='utf-8'))
+          ipos = d if isinstance(d, list) else d.get('ipos', [])
+          upd = {
+           'orient': dict(nk='Orient Cables', sub='8.77x (Day 2, 28 Sep)', gmp='₹72', gmp_pct='+26.5%', est_list='₹344', size='₹552 Cr', fresh='₹320 Cr', ofs='₹232 Cr', pe='51', listing='05/10/26', price='₹258-272', lot='55'),
+           'german': dict(nk='German Green', sub='5.39x (Day 2, 28 Sep)', gmp='₹24.5', gmp_pct='+17.6%', est_list='₹163.5', size='₹304 Cr', fresh='₹290 Cr', ofs='₹13.9 Cr', pe='9', listing='05/10/26', price='₹132-139', lot='107'),
+           'runwal': dict(nk='Runwal', sub='0.75x (Day 2, 28 Sep)', gmp='₹14', gmp_pct='+4.6%', est_list='₹319', size='₹500 Cr', fresh='₹500 Cr', ofs='0 (full fresh)', pe='21', listing='05/10/26', price='₹290-305', lot='49'),
+           'acevector': dict(nk='Acevector', sub='1.19x (Day 2, 28 Sep)', gmp='₹2', gmp_pct='+6.3%', est_list='₹34', size='₹420 Cr', fresh='₹287 Cr', ofs='₹133 Cr', pe='-32 (loss)', listing='05/10/26', price='₹30-32', lot='468'),
+          }
+          hits = 0
+          for x in ipos:
+              nm = str(x.get('name', '')).lower()
+              for k, u in upd.items():
+                  if u['nk'].lower() in nm:
+                      hits += 1
+                      for f, v in u.items():
+                          if f != 'nk':
+                              x[f] = v
+                      x['source'] = 'NSE/InvestorGain (Day 2 close)'
+                      x['last_updated'] = '2026-09-29'
+          print('patched:', hits)
+          if hits != 4:
+              raise SystemExit('expected 4 IPOs, got %d' % hits)
+          json.dump(d, open(path, 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
+          PY
+      - name: Commit
+        id: cd
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ipo-data.json
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "data: IPO Day-2 close update (4 IPOs closing 29 Sep)"
+          git pull --rebase --autostash || true
+          git push
+          echo "pushed=1" >> "$GITHUB_OUTPUT"
+      - name: Deploy pages
+        if: steps.cd.outputs.pushed == '1'
+        run: gh workflow run pages.yml --ref main
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
