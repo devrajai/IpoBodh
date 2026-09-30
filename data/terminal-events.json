@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "generated_at": "2026-09-30T15:26:39.616711+00:00",
+  "generated_at": "2026-09-30T21:27:01.205680+00:00",
   "events": [
     {
       "date": "2026-09-30",
@@ -56,34 +56,6 @@
       "type": "LISTING",
       "ipo_id": "green-asia-impex-limited",
       "name": "Green Asia Impex Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-10-05",
-      "type": "LISTING",
-      "ipo_id": "acevector-limited",
-      "name": "AceVector Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-10-05",
-      "type": "LISTING",
-      "ipo_id": "german-green-steel-and-power-limited",
-      "name": "German Green Steel and Power Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-10-05",
-      "type": "LISTING",
-      "ipo_id": "orient-cables-india-limited",
-      "name": "Orient Cables (India) Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-10-05",
-      "type": "LISTING",
-      "ipo_id": "runwal-enterprises-limited",
-      "name": "Runwal Enterprises Limited",
       "source": "NSE"
     },
     {

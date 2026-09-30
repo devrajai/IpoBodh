@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30T15:23:40.737463+00:00",
+  "updated_at": "2026-09-30T21:24:24.589379+00:00",
   "india": [
     {
       "name": "Nifty 50",
@@ -100,31 +100,8 @@
       "change_pct": 2.74
     }
   ],
-  "world": [
-    {
-      "price": 6276.02,
-      "change": -44.24,
-      "change_pct": -0.7,
-      "name": "Euro Stoxx 50",
-      "symbol": "^STOXX50E"
-    }
-  ],
-  "commodities": [
-    {
-      "price": 4196.0,
-      "change": 16.3,
-      "change_pct": 0.39,
-      "name": "Gold ($/oz)",
-      "symbol": "GC=F"
-    },
-    {
-      "price": 91.49,
-      "change": 2.11,
-      "change_pct": 2.36,
-      "name": "Crude WTI ($/bbl)",
-      "symbol": "CL=F"
-    }
-  ],
+  "world": [],
+  "commodities": [],
   "fx": [
     {
       "name": "USD/INR",
@@ -134,9 +111,7 @@
       "change_pct": null
     }
   ],
-  "derived": {
-    "gold_inr_per_10g": 129278.92
-  },
+  "derived": {},
   "sheet_listed_ipos": [
     [
       "INDIA IPO TRACKER QUICK STATS",

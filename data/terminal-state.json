@@ -1,14 +1,14 @@
 {
   "version": "2.0.0",
-  "generated_at": "2026-09-30T15:26:39.616711+00:00",
-  "today_ist": "2026-09-30",
-  "data_updated_at": "2026-09-30T20:56:12.683914+05:30",
-  "ipo_count": 11,
-  "field_coverage_pct": 63.2,
+  "generated_at": "2026-09-30T21:27:01.205680+00:00",
+  "today_ist": "2026-10-01",
+  "data_updated_at": "2026-10-01T02:56:38.574124+05:30",
+  "ipo_count": 7,
+  "field_coverage_pct": 56.5,
   "sources": {
     "NSE": {
       "ok": true,
-      "records": 11,
+      "records": 7,
       "errors": []
     },
     "BSE": {
@@ -32,6 +32,7 @@
         "Moneycontrol"
       ],
       "errors": [
+        "Moneycontrol: HTTP Error 404: Not Found",
         "LiveGMP: HTTP Error 404: Not Found"
       ]
     },
@@ -49,7 +50,7 @@
       "errors": []
     },
     "PublicAggregators": {
-      "checked_at": "2026-09-30T15:25:14.465573+00:00",
+      "checked_at": "2026-09-30T21:26:01.879352+00:00",
       "sources": {
         "Groww": {
           "ok": false,
@@ -84,15 +85,15 @@
     },
     "ProspectusResearch": {
       "ok": false,
-      "records": 11,
+      "records": 7,
       "matched": 0,
       "errors": [],
-      "checked_at": "2026-09-30T15:25:16.838875+00:00"
+      "checked_at": "2026-09-30T21:26:04.061579+00:00"
     },
     "SeedFallback": {
       "ok": true,
       "records": 0,
-      "checked_at": "2026-09-30T15:25:56.032943+00:00",
+      "checked_at": "2026-09-30T21:26:26.183885+00:00",
       "seed_fundamentals": 32,
       "seed_documents": 13
     },
@@ -102,21 +103,21 @@
       "changed_fields": 0,
       "live_gmp_records": 0,
       "rejected_gmp_records": 0,
-      "checked_at": "2026-09-30T15:25:56.104849+00:00"
+      "checked_at": "2026-09-30T21:26:26.260957+00:00"
     },
     "TranscriptEvidence": {
       "ok": true,
       "records": 0,
-      "checked_at": "2026-09-30T15:25:56.153902+00:00"
+      "checked_at": "2026-09-30T21:26:26.314486+00:00"
     },
     "LiveNews": {
       "ok": true,
       "records": 200,
-      "checked_at": "2026-09-30T15:25:56.302646+00:00",
+      "checked_at": "2026-09-30T21:26:26.475240+00:00",
       "feeds": {
         "Google News · IPO India": {
           "ok": true,
-          "records": 102,
+          "records": 104,
           "url": "https://news.google.com/rss/search?q=IPO+India&hl=en-IN&gl=IN&ceid=IN%3Aen"
         },
         "Google News · IPO allotment": {
@@ -131,7 +132,7 @@
         },
         "Google News · RHP DRHP": {
           "ok": true,
-          "records": 68,
+          "records": 65,
           "url": "https://news.google.com/rss/search?q=RHP+DRHP+IPO+India&hl=en-IN&gl=IN&ceid=IN%3Aen"
         }
       }
@@ -140,12 +141,12 @@
       "ok": true,
       "records": 13,
       "verified": 5,
-      "checked_at": "2026-09-30T15:25:56.302646+00:00"
+      "checked_at": "2026-09-30T21:26:26.475240+00:00"
     },
     "SelfHeal": {
       "ok": true,
-      "checked_at": "2026-09-30T20:56:12.683914+05:30",
-      "status_repairs": 4,
+      "checked_at": "2026-10-01T02:56:38.574124+05:30",
+      "status_repairs": 3,
       "sme_added": 0,
       "filings": {
         "checked": 21,
@@ -161,7 +162,7 @@
     {
       "id": "vishal-nirmiti-limited",
       "name": "Vishal Nirmiti Limited",
-      "fingerprint": "b0f303d73be38a2e",
+      "fingerprint": "00904455657829a3",
       "fields": {
         "price": "₹208-220",
         "size": "178.00",
@@ -171,9 +172,9 @@
         "allotment": null,
         "listing": "08/10/26",
         "sub": "—",
-        "sub_qib": "0.96",
-        "sub_nii": "0.01",
-        "sub_retail": "0.05",
+        "sub_qib": "0.00",
+        "sub_nii": "0.00",
+        "sub_retail": "0.04",
         "gmp": "₹6",
         "gmp_pct": "+2.7%",
         "est_list": "₹226",
@@ -189,7 +190,7 @@
     {
       "id": "nityas-gems-and-jewellery-limited",
       "name": "Nityas Gems and Jewellery Limited",
-      "fingerprint": "caf5cfb58ca633d8",
+      "fingerprint": "e1fb953518a3e19a",
       "fields": {
         "price": "₹70-75",
         "size": "108.42",
@@ -200,8 +201,8 @@
         "listing": "08/10/26",
         "sub": "—",
         "sub_qib": "0.00",
-        "sub_nii": "0.09",
-        "sub_retail": "0.47",
+        "sub_nii": "0.06",
+        "sub_retail": "0.37",
         "gmp": "₹5",
         "gmp_pct": "+6.7%",
         "est_list": "₹80",
@@ -215,65 +216,9 @@
       }
     },
     {
-      "id": "srit-india-limited",
-      "name": "Srit India Limited",
-      "fingerprint": "11ce3f045e4b7a24",
-      "fields": {
-        "price": "₹123-130",
-        "size": "₹0 Cr",
-        "lot": "115",
-        "open": "28/09/26",
-        "close": "30/09/26",
-        "allotment": null,
-        "listing": "06/10/26",
-        "sub": "—",
-        "sub_qib": null,
-        "sub_nii": null,
-        "sub_retail": null,
-        "gmp": "₹33",
-        "gmp_pct": "+25.4%",
-        "est_list": "₹163",
-        "pe": "—",
-        "roe": "30.23%",
-        "roce": "28.79%",
-        "growth": "16%",
-        "de": "0.23",
-        "fresh": "—",
-        "ofs": "—"
-      }
-    },
-    {
-      "id": "shah-investor-s-home-limited",
-      "name": "Shah Investor's Home Limited",
-      "fingerprint": "f7dc170d41a6ae6f",
-      "fields": {
-        "price": "₹159-167",
-        "size": "₹63 Cr",
-        "lot": "85",
-        "open": "28/09/26",
-        "close": "30/09/26",
-        "allotment": null,
-        "listing": "06/10/26",
-        "sub": "—",
-        "sub_qib": null,
-        "sub_nii": null,
-        "sub_retail": null,
-        "gmp": "₹14",
-        "gmp_pct": "+8.4%",
-        "est_list": "₹181",
-        "pe": "—",
-        "roe": "7.59%",
-        "roce": "10.61%",
-        "growth": "-23%",
-        "de": "0.10",
-        "fresh": "—",
-        "ofs": "—"
-      }
-    },
-    {
       "id": "eventions-limited",
       "name": "Eventions Limited",
-      "fingerprint": "9d465fe81b16b6ed",
+      "fingerprint": "a74ddf80a15643c6",
       "fields": {
         "price": "—",
         "size": "38.12",
@@ -283,9 +228,9 @@
         "allotment": null,
         "listing": "08/10/26",
         "sub": "—",
-        "sub_qib": "19.89",
-        "sub_nii": "0.14",
-        "sub_retail": "0.02",
+        "sub_qib": "13.09",
+        "sub_nii": "0.00",
+        "sub_retail": "0.01",
         "gmp": "₹0",
         "gmp_pct": "+0.0%",
         "est_list": "₹118",
@@ -355,115 +300,59 @@
       }
     },
     {
-      "id": "german-green-steel-and-power-limited",
-      "name": "German Green Steel and Power Limited",
-      "fingerprint": "c24759ee08068bca",
+      "id": "shah-investor-s-home-limited",
+      "name": "Shah Investor's Home Limited",
+      "fingerprint": "f7dc170d41a6ae6f",
       "fields": {
-        "price": "₹132-139",
-        "size": "₹223 Cr",
-        "lot": "107",
-        "open": "25/09/26",
-        "close": "29/09/26",
+        "price": "₹159-167",
+        "size": "₹63 Cr",
+        "lot": "85",
+        "open": "28/09/26",
+        "close": "30/09/26",
         "allotment": null,
-        "listing": "05/10/26",
-        "sub": "5.39x (Day 2, 28 Sep)",
-        "sub_qib": null,
-        "sub_nii": null,
-        "sub_retail": null,
-        "gmp": "₹24.5",
-        "gmp_pct": "+17.6%",
-        "est_list": "₹163.5",
-        "pe": "9",
-        "roe": "18.86%",
-        "roce": "19.31%",
-        "growth": "11%",
-        "de": "0.79",
-        "fresh": "₹290 Cr",
-        "ofs": "₹13.9 Cr"
-      }
-    },
-    {
-      "id": "runwal-enterprises-limited",
-      "name": "Runwal Enterprises Limited",
-      "fingerprint": "87da6a5ff0165192",
-      "fields": {
-        "price": "₹290-302",
-        "size": "₹366 Cr",
-        "lot": "49",
-        "open": "25/09/26",
-        "close": "29/09/26",
-        "allotment": null,
-        "listing": "05/10/26",
-        "sub": "0.75x (Day 2, 28 Sep)",
+        "listing": "06/10/26",
+        "sub": "—",
         "sub_qib": null,
         "sub_nii": null,
         "sub_retail": null,
         "gmp": "₹14",
-        "gmp_pct": "+4.6%",
-        "est_list": "₹319",
-        "pe": "21",
-        "roe": "—",
-        "roce": "—",
-        "growth": "76%",
-        "de": "3.29",
-        "fresh": "₹500 Cr",
-        "ofs": "0 (full fresh)"
+        "gmp_pct": "+8.4%",
+        "est_list": "₹181",
+        "pe": "—",
+        "roe": "7.59%",
+        "roce": "10.61%",
+        "growth": "-23%",
+        "de": "0.10",
+        "fresh": "—",
+        "ofs": "—"
       }
     },
     {
-      "id": "acevector-limited",
-      "name": "AceVector Limited",
-      "fingerprint": "26570861de61ae71",
+      "id": "srit-india-limited",
+      "name": "Srit India Limited",
+      "fingerprint": "b130b8bf2f435966",
       "fields": {
-        "price": "₹30-32",
-        "size": "₹238 Cr",
-        "lot": "468",
-        "open": "25/09/26",
-        "close": "29/09/26",
+        "price": "₹123-130",
+        "size": "₹153 Cr",
+        "lot": "115",
+        "open": "28/09/26",
+        "close": "30/09/26",
         "allotment": null,
-        "listing": "05/10/26",
-        "sub": "1.19x (Day 2, 28 Sep)",
+        "listing": "06/10/26",
+        "sub": "—",
         "sub_qib": null,
         "sub_nii": null,
         "sub_retail": null,
-        "gmp": "₹2",
-        "gmp_pct": "+6.3%",
-        "est_list": "₹34",
-        "pe": "-32 (loss)",
-        "roe": "—",
-        "roce": "—",
-        "growth": "32%",
-        "de": "—",
-        "fresh": "₹287 Cr",
-        "ofs": "₹133 Cr"
-      }
-    },
-    {
-      "id": "orient-cables-india-limited",
-      "name": "Orient Cables (India) Limited",
-      "fingerprint": "4c1f219ff0256c2d",
-      "fields": {
-        "price": "₹258-272",
-        "size": "₹407 Cr",
-        "lot": "55",
-        "open": "25/09/26",
-        "close": "29/09/26",
-        "allotment": null,
-        "listing": "05/10/26",
-        "sub": "8.77x (Day 2, 28 Sep)",
-        "sub_qib": null,
-        "sub_nii": null,
-        "sub_retail": null,
-        "gmp": "₹72",
-        "gmp_pct": "+26.5%",
-        "est_list": "₹344",
-        "pe": "51",
-        "roe": "13.17%",
-        "roce": "10.36%",
-        "growth": "42%",
-        "de": "0.95",
-        "fresh": "₹320 Cr",
-        "ofs": "₹232 Cr"
+        "gmp": "₹33",
+        "gmp_pct": "+25.4%",
+        "est_list": "₹163",
+        "pe": "—",
+        "roe": "30.23%",
+        "roce": "28.79%",
+        "growth": "16%",
+        "de": "0.23",
+        "fresh": "—",
+        "ofs": "—"
       }
     }
   ],
@@ -473,34 +362,6 @@
       "type": "OPEN",
       "ipo_id": "green-asia-impex-limited",
       "name": "Green Asia Impex Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-09-25",
-      "type": "OPEN",
-      "ipo_id": "acevector-limited",
-      "name": "AceVector Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-09-25",
-      "type": "OPEN",
-      "ipo_id": "german-green-steel-and-power-limited",
-      "name": "German Green Steel and Power Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-09-25",
-      "type": "OPEN",
-      "ipo_id": "orient-cables-india-limited",
-      "name": "Orient Cables (India) Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-09-25",
-      "type": "OPEN",
-      "ipo_id": "runwal-enterprises-limited",
-      "name": "Runwal Enterprises Limited",
       "source": "NSE"
     },
     {
@@ -515,34 +376,6 @@
       "type": "OPEN",
       "ipo_id": "srit-india-limited",
       "name": "Srit India Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-09-29",
-      "type": "CLOSE",
-      "ipo_id": "acevector-limited",
-      "name": "AceVector Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-09-29",
-      "type": "CLOSE",
-      "ipo_id": "german-green-steel-and-power-limited",
-      "name": "German Green Steel and Power Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-09-29",
-      "type": "CLOSE",
-      "ipo_id": "orient-cables-india-limited",
-      "name": "Orient Cables (India) Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-09-29",
-      "type": "CLOSE",
-      "ipo_id": "runwal-enterprises-limited",
-      "name": "Runwal Enterprises Limited",
       "source": "NSE"
     },
     {
@@ -606,34 +439,6 @@
       "type": "LISTING",
       "ipo_id": "green-asia-impex-limited",
       "name": "Green Asia Impex Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-10-05",
-      "type": "LISTING",
-      "ipo_id": "acevector-limited",
-      "name": "AceVector Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-10-05",
-      "type": "LISTING",
-      "ipo_id": "german-green-steel-and-power-limited",
-      "name": "German Green Steel and Power Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-10-05",
-      "type": "LISTING",
-      "ipo_id": "orient-cables-india-limited",
-      "name": "Orient Cables (India) Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-10-05",
-      "type": "LISTING",
-      "ipo_id": "runwal-enterprises-limited",
-      "name": "Runwal Enterprises Limited",
       "source": "NSE"
     },
     {
@@ -673,6 +478,47 @@
     }
   ],
   "changes": [
+    {
+      "at": "2026-09-30T21:27:01.205680+00:00",
+      "type": "DATA_CHANGE",
+      "ipo_id": "vishal-nirmiti-limited",
+      "name": "Vishal Nirmiti Limited",
+      "fields": [
+        "sub_qib",
+        "sub_nii",
+        "sub_retail"
+      ]
+    },
+    {
+      "at": "2026-09-30T21:27:01.205680+00:00",
+      "type": "DATA_CHANGE",
+      "ipo_id": "nityas-gems-and-jewellery-limited",
+      "name": "Nityas Gems and Jewellery Limited",
+      "fields": [
+        "sub_nii",
+        "sub_retail"
+      ]
+    },
+    {
+      "at": "2026-09-30T21:27:01.205680+00:00",
+      "type": "DATA_CHANGE",
+      "ipo_id": "eventions-limited",
+      "name": "Eventions Limited",
+      "fields": [
+        "sub_qib",
+        "sub_nii",
+        "sub_retail"
+      ]
+    },
+    {
+      "at": "2026-09-30T21:27:01.205680+00:00",
+      "type": "DATA_CHANGE",
+      "ipo_id": "srit-india-limited",
+      "name": "Srit India Limited",
+      "fields": [
+        "size"
+      ]
+    },
     {
       "at": "2026-09-30T12:33:45.550275+00:00",
       "type": "DATA_CHANGE",
@@ -3991,52 +3837,6 @@
         "name": "AceVector Ltd. Mainboard",
         "source": "Economic Times"
       }
-    },
-    {
-      "at": "2026-09-23T10:47:52.264791+00:00",
-      "type": "NEW_EVENT",
-      "event": {
-        "date": "2026-09-25",
-        "type": "OPEN",
-        "ipo_id": "sai-urja-indo-ventures-ltd-sme",
-        "name": "Sai Urja Indo Ventures Ltd. SME",
-        "source": "Economic Times"
-      }
-    },
-    {
-      "at": "2026-09-23T10:07:13.326969+00:00",
-      "type": "NEW_EVENT",
-      "event": {
-        "date": "2026-09-25",
-        "type": "OPEN",
-        "ipo_id": "dudani-retail-ltd-sme",
-        "name": "Dudani Retail Ltd. SME",
-        "source": "Economic Times"
-      }
-    },
-    {
-      "at": "2026-09-23T09:58:22.986177+00:00",
-      "type": "DATA_CHANGE",
-      "ipo_id": "armee-infotech-limited",
-      "name": "ArMee Infotech Limited",
-      "fields": [
-        "roe",
-        "roce",
-        "growth",
-        "de"
-      ]
-    },
-    {
-      "at": "2026-09-23T09:58:22.986177+00:00",
-      "type": "DATA_CHANGE",
-      "ipo_id": "adroit-industries-india-limited",
-      "name": "Adroit Industries (India) Limited",
-      "fields": [
-        "roe",
-        "roce",
-        "growth",
-        "de"
-      ]
     }
   ]
 }

@@ -1,54 +1,26 @@
 {
-  "updated_at": "2026-09-30T20:56:12.683914+05:30",
+  "updated_at": "2026-10-01T02:56:38.574124+05:30",
   "data": [
     {
       "name": "Vishal Nirmiti Limited",
-      "qib": "0.96",
-      "nii": "0.01",
-      "rii": "0.05",
+      "qib": "0.00",
+      "nii": "0.00",
+      "rii": "0.04",
       "total": "—"
     },
     {
       "name": "Nityas Gems and Jewellery Limited",
       "qib": "0.00",
-      "nii": "0.09",
-      "rii": "0.47",
+      "nii": "0.06",
+      "rii": "0.37",
       "total": "—"
     },
     {
       "name": "Eventions Limited",
-      "qib": "19.89",
-      "nii": "0.14",
-      "rii": "0.02",
+      "qib": "13.09",
+      "nii": "0.00",
+      "rii": "0.01",
       "total": "—"
-    },
-    {
-      "name": "German Green Steel and Power Limited",
-      "qib": "—",
-      "nii": "—",
-      "rii": "—",
-      "total": "5.39x (Day 2, 28 Sep)"
-    },
-    {
-      "name": "Runwal Enterprises Limited",
-      "qib": "—",
-      "nii": "—",
-      "rii": "—",
-      "total": "0.75x (Day 2, 28 Sep)"
-    },
-    {
-      "name": "AceVector Limited",
-      "qib": "—",
-      "nii": "—",
-      "rii": "—",
-      "total": "1.19x (Day 2, 28 Sep)"
-    },
-    {
-      "name": "Orient Cables (India) Limited",
-      "qib": "—",
-      "nii": "—",
-      "rii": "—",
-      "total": "8.77x (Day 2, 28 Sep)"
     }
   ]
 }
