@@ -1,42 +1,7 @@
 {
   "version": "2.0.0",
-  "generated_at": "2026-09-30T21:27:01.205680+00:00",
+  "generated_at": "2026-10-01T00:35:52.362408+00:00",
   "events": [
-    {
-      "date": "2026-09-30",
-      "type": "CLOSE",
-      "ipo_id": "shah-investor-s-home-limited",
-      "name": "Shah Investor's Home Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-09-30",
-      "type": "CLOSE",
-      "ipo_id": "srit-india-limited",
-      "name": "Srit India Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-09-30",
-      "type": "OPEN",
-      "ipo_id": "eventions-limited",
-      "name": "Eventions Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-09-30",
-      "type": "OPEN",
-      "ipo_id": "nityas-gems-and-jewellery-limited",
-      "name": "Nityas Gems and Jewellery Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-09-30",
-      "type": "OPEN",
-      "ipo_id": "vishal-nirmiti-limited",
-      "name": "Vishal Nirmiti Limited",
-      "source": "NSE"
-    },
     {
       "date": "2026-10-01",
       "type": "CLOSE",
