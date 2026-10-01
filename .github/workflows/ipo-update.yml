@@ -58,6 +58,8 @@ jobs:
         run: python scripts/build_terminal_state.py
       - name: Merge Google Sheet IPO Tracker data
         run: python scripts/sync_sheet_to_site.py || echo 'sheet merge skipped'
+      - name: Fill upcoming-IPO deadlines (SEBI approval-lapsing dates)
+        run: python3 scripts/enrich_upcoming_dates.py || echo 'deadline enrichment skipped'
       - name: Validate generated data
         run: |
           set -e

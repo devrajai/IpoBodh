@@ -1017,14 +1017,16 @@
     "board": "Mainboard",
     "source_url": "https://ipocentral.in/upcoming-ipos-in-october-2026/",
     "status": "upcoming",
-    "issue_size": "₹332.04 Cr"
+    "issue_size": "₹332.04 Cr",
+    "deadline": "2026-10-17"
   },
   {
     "name": "Allied Engineering",
     "board": "Mainboard",
     "source_url": "https://ipocentral.in/upcoming-ipos-in-october-2026/",
     "status": "upcoming",
-    "issue_size": "₹400 Cr"
+    "issue_size": "₹400 Cr",
+    "deadline": "2026-10-30"
   },
   {
     "name": "Avaada Electro",
@@ -1038,13 +1040,15 @@
     "board": "Mainboard",
     "source_url": "https://ipocentral.in/upcoming-ipos-in-october-2026/",
     "status": "upcoming",
-    "issue_size": "₹800 Cr"
+    "issue_size": "₹800 Cr",
+    "deadline": "2026-10-24"
   },
   {
     "name": "Kanodia Cement",
     "board": "Mainboard",
     "source_url": "https://ipocentral.in/upcoming-ipos-in-october-2026/",
-    "status": "upcoming"
+    "status": "upcoming",
+    "deadline": "2026-10-20"
   },
   {
     "name": "Monomark Engineering",
@@ -1057,13 +1061,15 @@
     "board": "Mainboard",
     "source_url": "https://ipocentral.in/upcoming-ipos-in-october-2026/",
     "status": "upcoming",
-    "issue_size": "₹1500 Cr"
+    "issue_size": "₹1500 Cr",
+    "deadline": "2026-10-13"
   },
   {
     "name": "Safex Chemicals",
     "board": "Mainboard",
     "source_url": "https://ipocentral.in/upcoming-ipos-in-october-2026/",
     "status": "upcoming",
-    "issue_size": "₹450 Cr"
+    "issue_size": "₹450 Cr",
+    "deadline": "2026-10-17"
   }
 ]
