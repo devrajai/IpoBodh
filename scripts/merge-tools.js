@@ -339,7 +339,7 @@
             }).join('') + '</table></div>';
         }
 
-        var H2 = '<div class="pt-hint"><b>One desk, every signal.</b> Cards merge Decision scores + Coach verdicts + Why-and-Sources maths. Tap a card\u2019s dossier button for lanes, peers, anchors and the RHP checklist. Everything auto-updates with site data.</div>';
+        var H2 = '';
 
         el.innerHTML = H2
           + '<div style="display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 12px">'
