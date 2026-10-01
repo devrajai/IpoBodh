@@ -3826,6 +3826,219 @@
       "listingPrice": 68.0,
       "gainPercent": -34.6,
       "gainRupees": -36.0
+    },
+    {
+      "id": "vans-electroengineerings",
+      "name": "Vans Electroengineerings",
+      "type": "SME",
+      "status": "open",
+      "price": "₹112 to ₹118",
+      "lot": "1200",
+      "size": "₹33.98 Cr",
+      "open": "29/09/26",
+      "close": "01/10/26",
+      "listing": "07/10/26",
+      "source_url": "https://www.chittorgarh.com/ipo/vans-electroengineerings-ipo/3197/"
+    },
+    {
+      "id": "sollfege-smart-electronics",
+      "name": "Sollfege Smart Electronics",
+      "type": "SME",
+      "status": "open",
+      "price": "₹55 (Fixed)",
+      "lot": "2000",
+      "size": "₹22 Cr",
+      "open": "30/09/26",
+      "close": "05/10/26",
+      "source_url": "https://www.chittorgarh.com/ipo/sollfege-smart-electronics-ipo/3086/"
+    },
+    {
+      "id": "omara-ventures-india",
+      "name": "Omara Ventures India",
+      "type": "SME",
+      "status": "open",
+      "price": "₹296 to ₹311",
+      "lot": "400",
+      "size": "₹41.99 Cr",
+      "open": "30/09/26",
+      "close": "05/10/26",
+      "gmp": "₹0 (28 Sep)",
+      "source_url": "https://www.chittorgarh.com/ipo/omara-ventures-india-ipo/3194/"
+    },
+    {
+      "id": "acme-india-industries",
+      "name": "Acme India Industries",
+      "type": "SME",
+      "status": "open",
+      "price": "₹186 to ₹196",
+      "lot": "600",
+      "size": "₹121.69 Cr",
+      "open": "30/09/26",
+      "close": "06/10/26",
+      "gmp": "₹30 (28 Sep)",
+      "source_url": "https://www.chittorgarh.com/ipo/acme-india-industries-ipo/2748/"
+    },
+    {
+      "id": "tna-solutions",
+      "name": "TNA Solutions",
+      "type": "SME",
+      "status": "open",
+      "price": "₹66 to ₹70",
+      "lot": "2000",
+      "size": "₹37.86 Cr",
+      "open": "30/09/26",
+      "close": "06/10/26",
+      "gmp": "₹7 (28 Sep)",
+      "source_url": "https://www.chittorgarh.com/ipo/tna-solutions-ipo/3216/"
+    },
+    {
+      "id": "black-opal-consultants",
+      "name": "Black Opal Consultants",
+      "type": "SME",
+      "status": "open",
+      "price": "₹185 to ₹197",
+      "lot": "600",
+      "size": "₹55.08 Cr",
+      "open": "29/09/26",
+      "close": "01/10/26",
+      "listing": "07/10/26",
+      "source_url": "https://www.chittorgarh.com/ipo/black-opal-consultants-ipo/2798/"
+    },
+    {
+      "id": "dove-soft",
+      "name": "Dove Soft",
+      "type": "SME",
+      "status": "open",
+      "price": "₹104 to ₹111",
+      "lot": "1200",
+      "size": "₹73.26 Cr",
+      "open": "30/09/26",
+      "close": "05/10/26",
+      "gmp": "₹0 (29 Sep)",
+      "source_url": "https://www.chittorgarh.com/ipo/dove-soft-ipo/2424/"
+    },
+    {
+      "id": "paramount-syntex",
+      "name": "Paramount Syntex",
+      "type": "SME",
+      "status": "open",
+      "price": "₹119 to ₹127",
+      "lot": "1000",
+      "size": "₹81.79 Cr",
+      "open": "30/09/26",
+      "close": "06/10/26",
+      "source_url": "https://www.chittorgarh.com/ipo/paramount-syntex-ipo/2743/"
+    },
+    {
+      "id": "everestims-technologies",
+      "name": "EverestIMS Technologies",
+      "type": "SME",
+      "status": "open",
+      "open": "29/09/26",
+      "close": "05/10/26",
+      "source_url": "https://www.chittorgarh.com/ipo/everestims-technologies-ipo/2063/"
+    },
+    {
+      "id": "shree-tnb-polymers",
+      "name": "Shree TNB Polymers",
+      "type": "SME",
+      "status": "open",
+      "price": "₹50 to ₹53",
+      "lot": "2000",
+      "size": "₹31.8 Cr",
+      "open": "28/09/26",
+      "close": "05/10/26",
+      "listing": "08/10/26",
+      "source_url": "https://www.chittorgarh.com/ipo/shree-tnb-polymers-ipo/3095/"
+    },
+    {
+      "id": "sjp-ultrasonic",
+      "name": "SJP Ultrasonic",
+      "type": "SME",
+      "status": "open",
+      "price": "₹67 (Fixed)",
+      "lot": "2000",
+      "size": "₹23.45 Cr",
+      "open": "30/09/26",
+      "close": "05/10/26",
+      "listing": "08/10/26",
+      "source_url": "https://www.chittorgarh.com/ipo/sjp-ultrasonic-ipo/2703/"
+    },
+    {
+      "id": "nityas-gems-jewellery",
+      "name": "Nityas Gems & Jewellery",
+      "type": "Mainboard",
+      "status": "open",
+      "price": "₹70 to ₹75",
+      "lot": "200",
+      "size": "₹108.35 Cr",
+      "open": "30/09/26",
+      "close": "05/10/26",
+      "listing": "08/10/26",
+      "gmp": "₹5 (+7%) (30 Sep)",
+      "source_url": "https://www.chittorgarh.com/ipo/nityas-gems-jewellery-ipo/2974/"
+    },
+    {
+      "id": "rayzon-solar",
+      "name": "Rayzon Solar",
+      "type": "Mainboard",
+      "status": "upcoming",
+      "size": "₹1500 Cr",
+      "source_url": "https://ipocentral.in/upcoming-ipos-in-october-2026/"
+    },
+    {
+      "id": "curefoods-india",
+      "name": "Curefoods India",
+      "type": "Mainboard",
+      "status": "upcoming",
+      "size": "₹800 Cr",
+      "source_url": "https://ipocentral.in/upcoming-ipos-in-october-2026/"
+    },
+    {
+      "id": "safex-chemicals",
+      "name": "Safex Chemicals",
+      "type": "Mainboard",
+      "status": "upcoming",
+      "size": "₹450 Cr",
+      "source_url": "https://ipocentral.in/upcoming-ipos-in-october-2026/"
+    },
+    {
+      "id": "kanodia-cement",
+      "name": "Kanodia Cement",
+      "type": "Mainboard",
+      "status": "upcoming",
+      "source_url": "https://ipocentral.in/upcoming-ipos-in-october-2026/"
+    },
+    {
+      "id": "allied-engineering",
+      "name": "Allied Engineering",
+      "type": "Mainboard",
+      "status": "upcoming",
+      "size": "₹400 Cr",
+      "source_url": "https://ipocentral.in/upcoming-ipos-in-october-2026/"
+    },
+    {
+      "id": "avaada-electro",
+      "name": "Avaada Electro",
+      "type": "Mainboard",
+      "status": "upcoming",
+      "size": "₹7600 Cr",
+      "source_url": "https://www.chittorgarh.com/ipo/avaada-electro-ipo/2790/"
+    },
+    {
+      "id": "aggcon-equipments",
+      "name": "Aggcon Equipments",
+      "type": "Mainboard",
+      "status": "upcoming",
+      "size": "₹332.04 Cr",
+      "source_url": "https://ipocentral.in/upcoming-ipos-in-october-2026/"
+    },
+    {
+      "id": "monomark-engineering",
+      "name": "Monomark Engineering",
+      "type": "Mainboard",
+      "status": "upcoming",
+      "source_url": "https://ipocentral.in/upcoming-ipos-in-october-2026/"
     }
   ],
   "listed": [
