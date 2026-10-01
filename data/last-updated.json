@@ -1,3 +1,6 @@
 {
-  "updated": "2026-10-01T03:15:01Z"
+  "updated": "2026-10-01T03:29:06.093178Z",
+  "refresh_interval_minutes": 180,
+  "source": "GitHub Actions + NSE/BSE/SEBI public sources",
+  "timezone": "UTC"
 }
