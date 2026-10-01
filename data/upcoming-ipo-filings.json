@@ -1,8 +1,21 @@
 {
-  "generated_at": "2026-10-01T15:00:03.864508+05:30",
+  "generated_at": "2026-10-01T18:03:57.721946+05:30",
   "source": "IPO Terminal self-heal official-source checker",
-  "count": 1,
+  "count": 2,
   "ipos": [
+    {
+      "ipo_name": "SMC Global Securities Limited",
+      "id": "smc-global-securities-limited",
+      "type": "Mainboard",
+      "exchange": "NSE",
+      "status": "upcoming",
+      "open": "05/10/26",
+      "close": "16/10/26",
+      "filing_url": "https://www.nseindia.com/static/investor-relations/offer-documents",
+      "verified": true,
+      "http_status": 200,
+      "checked_at": "2026-10-01T18:03:57.721946+05:30"
+    },
     {
       "ipo_name": "R.K. Fashion Accessories Limited",
       "id": "r-k-fashion-accessories-limited",
@@ -14,7 +27,7 @@
       "filing_url": "https://www.nseindia.com/static/investor-relations/offer-documents",
       "verified": true,
       "http_status": 200,
-      "checked_at": "2026-10-01T15:00:03.864508+05:30"
+      "checked_at": "2026-10-01T18:03:57.721946+05:30"
     }
   ]
 }

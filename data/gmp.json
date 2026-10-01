@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T15:00:03.864508+05:30",
+  "updated_at": "2026-10-01T18:03:57.721946+05:30",
   "data": [
     {
       "name": "Vishal Nirmiti Limited",
@@ -8,7 +8,7 @@
       "estimated_listing": "₹226",
       "gmp_pct": "+2.7%",
       "kostak": "—",
-      "updated_at": "2026-10-01T15:00:03.864508+05:30"
+      "updated_at": "2026-10-01T18:03:57.721946+05:30"
     },
     {
       "name": "Nityas Gems and Jewellery Limited",
@@ -17,7 +17,7 @@
       "estimated_listing": "₹80",
       "gmp_pct": "+6.7%",
       "kostak": "—",
-      "updated_at": "2026-10-01T15:00:03.864508+05:30"
+      "updated_at": "2026-10-01T18:03:57.721946+05:30"
     },
     {
       "name": "Eventions Limited",
@@ -26,25 +26,7 @@
       "estimated_listing": "₹118",
       "gmp_pct": "+0.0%",
       "kostak": "—",
-      "updated_at": "2026-10-01T15:00:03.864508+05:30"
-    },
-    {
-      "name": "Shah Investor's Home Limited",
-      "issue_price": "₹159-167",
-      "gmp": "₹14",
-      "estimated_listing": "₹181",
-      "gmp_pct": "+8.4%",
-      "kostak": "—",
-      "updated_at": "2026-10-01T15:00:03.864508+05:30"
-    },
-    {
-      "name": "Srit India Limited",
-      "issue_price": "₹123-130",
-      "gmp": "₹33",
-      "estimated_listing": "₹163",
-      "gmp_pct": "+25.4%",
-      "kostak": "—",
-      "updated_at": "2026-10-01T15:00:03.864508+05:30"
+      "updated_at": "2026-10-01T18:03:57.721946+05:30"
     }
   ]
 }

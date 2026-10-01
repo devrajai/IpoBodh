@@ -1,14 +1,14 @@
 {
   "version": "2.0.0",
-  "generated_at": "2026-10-01T09:30:25.158685+00:00",
+  "generated_at": "2026-10-01T12:34:30.526401+00:00",
   "today_ist": "2026-10-01",
-  "data_updated_at": "2026-10-01T15:00:03.864508+05:30",
-  "ipo_count": 8,
-  "field_coverage_pct": 51.8,
+  "data_updated_at": "2026-10-01T18:03:57.721946+05:30",
+  "ipo_count": 7,
+  "field_coverage_pct": 44.9,
   "sources": {
     "NSE": {
       "ok": true,
-      "records": 8,
+      "records": 7,
       "errors": []
     },
     "BSE": {
@@ -38,7 +38,7 @@
     },
     "NEWS": {
       "ok": true,
-      "records": 4,
+      "records": 6,
       "source": "Google News RSS public feeds",
       "window_days": 5,
       "errors": []
@@ -50,7 +50,7 @@
       "errors": []
     },
     "PublicAggregators": {
-      "checked_at": "2026-10-01T09:29:19.247744+00:00",
+      "checked_at": "2026-10-01T12:33:09.226899+00:00",
       "sources": {
         "Groww": {
           "ok": false,
@@ -67,9 +67,9 @@
           "url": "https://www.livemint.com/market/ipo/subscription-status"
         },
         "EconomicTimes": {
-          "ok": false,
-          "records": 0,
-          "matched": 0,
+          "ok": true,
+          "records": 1,
+          "matched": 1,
           "added": 0,
           "url": "https://economictimes.indiatimes.com/markets/ipo/upcoming"
         },
@@ -85,15 +85,15 @@
     },
     "ProspectusResearch": {
       "ok": false,
-      "records": 8,
+      "records": 7,
       "matched": 0,
       "errors": [],
-      "checked_at": "2026-10-01T09:29:21.695597+00:00"
+      "checked_at": "2026-10-01T12:33:11.710043+00:00"
     },
     "SeedFallback": {
       "ok": true,
       "records": 0,
-      "checked_at": "2026-10-01T09:29:47.294835+00:00",
+      "checked_at": "2026-10-01T12:33:37.960529+00:00",
       "seed_fundamentals": 32,
       "seed_documents": 13
     },
@@ -103,21 +103,21 @@
       "changed_fields": 0,
       "live_gmp_records": 0,
       "rejected_gmp_records": 0,
-      "checked_at": "2026-10-01T09:29:47.367640+00:00"
+      "checked_at": "2026-10-01T12:33:38.030805+00:00"
     },
     "TranscriptEvidence": {
       "ok": true,
       "records": 0,
-      "checked_at": "2026-10-01T09:29:47.416869+00:00"
+      "checked_at": "2026-10-01T12:33:38.078324+00:00"
     },
     "LiveNews": {
       "ok": true,
       "records": 200,
-      "checked_at": "2026-10-01T09:29:47.569993+00:00",
+      "checked_at": "2026-10-01T12:33:38.224877+00:00",
       "feeds": {
         "Google News · IPO India": {
           "ok": true,
-          "records": 106,
+          "records": 104,
           "url": "https://news.google.com/rss/search?q=IPO+India&hl=en-IN&gl=IN&ceid=IN%3Aen"
         },
         "Google News · IPO allotment": {
@@ -141,19 +141,19 @@
       "ok": true,
       "records": 13,
       "verified": 5,
-      "checked_at": "2026-10-01T09:29:47.569993+00:00"
+      "checked_at": "2026-10-01T12:33:38.224877+00:00"
     },
     "SelfHeal": {
       "ok": true,
-      "checked_at": "2026-10-01T15:00:03.864508+05:30",
-      "status_repairs": 3,
+      "checked_at": "2026-10-01T18:03:57.721946+05:30",
+      "status_repairs": 1,
       "sme_added": 0,
       "filings": {
         "checked": 21,
         "verified": 13,
         "repaired": 8
       },
-      "upcoming_filing_map": 1,
+      "upcoming_filing_map": 2,
       "schedule": "GitHub Actions every 15 minutes",
       "rule": "Open and Upcoming are mutually exclusive; opening date begins at 00:00 IST"
     }
@@ -162,7 +162,7 @@
     {
       "id": "vishal-nirmiti-limited",
       "name": "Vishal Nirmiti Limited",
-      "fingerprint": "64a57adc0b635286",
+      "fingerprint": "f6568d4d00137972",
       "fields": {
         "price": "₹208-220",
         "size": "178.00",
@@ -173,8 +173,8 @@
         "listing": "08/10/26",
         "sub": "—",
         "sub_qib": "0.96",
-        "sub_nii": "0.64",
-        "sub_retail": "0.31",
+        "sub_nii": "0.75",
+        "sub_retail": "0.39",
         "gmp": "₹6",
         "gmp_pct": "+2.7%",
         "est_list": "₹226",
@@ -190,7 +190,7 @@
     {
       "id": "nityas-gems-and-jewellery-limited",
       "name": "Nityas Gems and Jewellery Limited",
-      "fingerprint": "5777562611878e47",
+      "fingerprint": "a09a3b0bb33debf4",
       "fields": {
         "price": "₹70-75",
         "size": "108.42",
@@ -200,9 +200,9 @@
         "allotment": null,
         "listing": "08/10/26",
         "sub": "—",
-        "sub_qib": "0.00",
-        "sub_nii": "0.20",
-        "sub_retail": "1.05",
+        "sub_qib": "0.12",
+        "sub_nii": "0.24",
+        "sub_retail": "1.19",
         "gmp": "₹5",
         "gmp_pct": "+6.7%",
         "est_list": "₹80",
@@ -218,7 +218,7 @@
     {
       "id": "eventions-limited",
       "name": "Eventions Limited",
-      "fingerprint": "1359ff125cdb59ff",
+      "fingerprint": "5a4388d6856a8a52",
       "fields": {
         "price": "—",
         "size": "38.12",
@@ -228,9 +228,9 @@
         "allotment": null,
         "listing": "08/10/26",
         "sub": "—",
-        "sub_qib": "22.51",
+        "sub_qib": "26.18",
         "sub_nii": "0.18",
-        "sub_retail": "0.05",
+        "sub_retail": "0.48",
         "gmp": "₹0",
         "gmp_pct": "+0.0%",
         "est_list": "₹118",
@@ -300,57 +300,29 @@
       }
     },
     {
-      "id": "shah-investor-s-home-limited",
-      "name": "Shah Investor's Home Limited",
-      "fingerprint": "f7dc170d41a6ae6f",
+      "id": "smc-global-securities-limited",
+      "name": "SMC Global Securities Limited",
+      "fingerprint": "71cbfcac06c2b2f8",
       "fields": {
-        "price": "₹159-167",
-        "size": "₹63 Cr",
-        "lot": "85",
-        "open": "28/09/26",
-        "close": "30/09/26",
+        "price": "₹1000",
+        "size": "₹75 Cr",
+        "lot": "—",
+        "open": "05/10/26",
+        "close": "16/10/26",
         "allotment": null,
-        "listing": "06/10/26",
+        "listing": "—",
         "sub": "—",
         "sub_qib": null,
         "sub_nii": null,
         "sub_retail": null,
-        "gmp": "₹14",
-        "gmp_pct": "+8.4%",
-        "est_list": "₹181",
+        "gmp": "—",
+        "gmp_pct": "—",
+        "est_list": "—",
         "pe": "—",
-        "roe": "7.59%",
-        "roce": "10.61%",
-        "growth": "-23%",
-        "de": "0.10",
-        "fresh": "—",
-        "ofs": "—"
-      }
-    },
-    {
-      "id": "srit-india-limited",
-      "name": "Srit India Limited",
-      "fingerprint": "b130b8bf2f435966",
-      "fields": {
-        "price": "₹123-130",
-        "size": "₹153 Cr",
-        "lot": "115",
-        "open": "28/09/26",
-        "close": "30/09/26",
-        "allotment": null,
-        "listing": "06/10/26",
-        "sub": "—",
-        "sub_qib": null,
-        "sub_nii": null,
-        "sub_retail": null,
-        "gmp": "₹33",
-        "gmp_pct": "+25.4%",
-        "est_list": "₹163",
-        "pe": "—",
-        "roe": "30.23%",
-        "roce": "28.79%",
-        "growth": "16%",
-        "de": "0.23",
+        "roe": "—",
+        "roce": "—",
+        "growth": "—",
+        "de": "—",
         "fresh": "—",
         "ofs": "—"
       }
@@ -358,11 +330,11 @@
     {
       "id": "r-k-fashion-accessories-limited",
       "name": "R.K. Fashion Accessories Limited",
-      "fingerprint": "b59d776f0a4fa33d",
+      "fingerprint": "4246a83cb26e672b",
       "fields": {
-        "price": "₹77-82",
-        "size": "34.99",
-        "lot": "—",
+        "price": "₹77 – ₹82",
+        "size": "₹34.99 Cr",
+        "lot": "1600",
         "open": "05/10/26",
         "close": "Oct 7, 2026",
         "allotment": null,
@@ -393,38 +365,10 @@
       "source": "NSE"
     },
     {
-      "date": "2026-09-28",
-      "type": "OPEN",
-      "ipo_id": "shah-investor-s-home-limited",
-      "name": "Shah Investor's Home Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-09-28",
-      "type": "OPEN",
-      "ipo_id": "srit-india-limited",
-      "name": "Srit India Limited",
-      "source": "NSE"
-    },
-    {
       "date": "2026-09-29",
       "type": "OPEN",
       "ipo_id": "papadmalji-agro-foods-limited",
       "name": "Papadmalji Agro Foods Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-09-30",
-      "type": "CLOSE",
-      "ipo_id": "shah-investor-s-home-limited",
-      "name": "Shah Investor's Home Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-09-30",
-      "type": "CLOSE",
-      "ipo_id": "srit-india-limited",
-      "name": "Srit India Limited",
       "source": "NSE"
     },
     {
@@ -477,17 +421,10 @@
       "source": "NSE"
     },
     {
-      "date": "2026-10-06",
-      "type": "LISTING",
-      "ipo_id": "shah-investor-s-home-limited",
-      "name": "Shah Investor's Home Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-10-06",
-      "type": "LISTING",
-      "ipo_id": "srit-india-limited",
-      "name": "Srit India Limited",
+      "date": "2026-10-05",
+      "type": "OPEN",
+      "ipo_id": "smc-global-securities-limited",
+      "name": "SMC Global Securities Limited",
       "source": "NSE"
     },
     {
@@ -510,9 +447,80 @@
       "ipo_id": "vishal-nirmiti-limited",
       "name": "Vishal Nirmiti Limited",
       "source": "NSE"
+    },
+    {
+      "date": "2026-10-16",
+      "type": "CLOSE",
+      "ipo_id": "smc-global-securities-limited",
+      "name": "SMC Global Securities Limited",
+      "source": "NSE"
     }
   ],
   "changes": [
+    {
+      "at": "2026-10-01T12:34:30.526401+00:00",
+      "type": "DATA_CHANGE",
+      "ipo_id": "vishal-nirmiti-limited",
+      "name": "Vishal Nirmiti Limited",
+      "fields": [
+        "sub_nii",
+        "sub_retail"
+      ]
+    },
+    {
+      "at": "2026-10-01T12:34:30.526401+00:00",
+      "type": "DATA_CHANGE",
+      "ipo_id": "nityas-gems-and-jewellery-limited",
+      "name": "Nityas Gems and Jewellery Limited",
+      "fields": [
+        "sub_qib",
+        "sub_nii",
+        "sub_retail"
+      ]
+    },
+    {
+      "at": "2026-10-01T12:34:30.526401+00:00",
+      "type": "DATA_CHANGE",
+      "ipo_id": "eventions-limited",
+      "name": "Eventions Limited",
+      "fields": [
+        "sub_qib",
+        "sub_retail"
+      ]
+    },
+    {
+      "at": "2026-10-01T12:34:30.526401+00:00",
+      "type": "DATA_CHANGE",
+      "ipo_id": "r-k-fashion-accessories-limited",
+      "name": "R.K. Fashion Accessories Limited",
+      "fields": [
+        "price",
+        "size",
+        "lot"
+      ]
+    },
+    {
+      "at": "2026-10-01T12:34:30.526401+00:00",
+      "type": "NEW_EVENT",
+      "event": {
+        "date": "2026-10-05",
+        "type": "OPEN",
+        "ipo_id": "smc-global-securities-limited",
+        "name": "SMC Global Securities Limited",
+        "source": "NSE"
+      }
+    },
+    {
+      "at": "2026-10-01T12:34:30.526401+00:00",
+      "type": "NEW_EVENT",
+      "event": {
+        "date": "2026-10-16",
+        "type": "CLOSE",
+        "ipo_id": "smc-global-securities-limited",
+        "name": "SMC Global Securities Limited",
+        "source": "NSE"
+      }
+    },
     {
       "at": "2026-10-01T09:30:25.158685+00:00",
       "type": "DATA_CHANGE",
@@ -3794,76 +3802,6 @@
       "type": "DATA_CHANGE",
       "ipo_id": "armee-infotech-limited",
       "name": "ArMee Infotech Limited",
-      "fields": [
-        "roe",
-        "roce",
-        "growth",
-        "de"
-      ]
-    },
-    {
-      "at": "2026-09-23T10:57:43.492375+00:00",
-      "type": "DATA_CHANGE",
-      "ipo_id": "adroit-industries-india-limited",
-      "name": "Adroit Industries (India) Limited",
-      "fields": [
-        "roe",
-        "roce",
-        "growth",
-        "de"
-      ]
-    },
-    {
-      "at": "2026-09-23T10:57:43.492375+00:00",
-      "type": "DATA_CHANGE",
-      "ipo_id": "elevate-campuses-limited",
-      "name": "Elevate Campuses Limited",
-      "fields": [
-        "roce",
-        "growth",
-        "de"
-      ]
-    },
-    {
-      "at": "2026-09-23T10:57:43.492375+00:00",
-      "type": "DATA_CHANGE",
-      "ipo_id": "swastika-infra-limited",
-      "name": "Swastika Infra Limited",
-      "fields": [
-        "roe",
-        "roce",
-        "growth",
-        "de"
-      ]
-    },
-    {
-      "at": "2026-09-23T10:57:43.492375+00:00",
-      "type": "DATA_CHANGE",
-      "ipo_id": "varmora-granito-limited",
-      "name": "Varmora Granito Limited",
-      "fields": [
-        "roe",
-        "roce",
-        "growth"
-      ]
-    },
-    {
-      "at": "2026-09-23T10:47:52.264791+00:00",
-      "type": "DATA_CHANGE",
-      "ipo_id": "armee-infotech-limited",
-      "name": "ArMee Infotech Limited",
-      "fields": [
-        "roe",
-        "roce",
-        "growth",
-        "de"
-      ]
-    },
-    {
-      "at": "2026-09-23T10:47:52.264791+00:00",
-      "type": "DATA_CHANGE",
-      "ipo_id": "adroit-industries-india-limited",
-      "name": "Adroit Industries (India) Limited",
       "fields": [
         "roe",
         "roce",

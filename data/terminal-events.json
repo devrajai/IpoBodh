@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "generated_at": "2026-10-01T09:30:25.158685+00:00",
+  "generated_at": "2026-10-01T12:34:30.526401+00:00",
   "events": [
     {
       "date": "2026-10-01",
@@ -31,17 +31,10 @@
       "source": "NSE"
     },
     {
-      "date": "2026-10-06",
-      "type": "LISTING",
-      "ipo_id": "shah-investor-s-home-limited",
-      "name": "Shah Investor's Home Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-10-06",
-      "type": "LISTING",
-      "ipo_id": "srit-india-limited",
-      "name": "Srit India Limited",
+      "date": "2026-10-05",
+      "type": "OPEN",
+      "ipo_id": "smc-global-securities-limited",
+      "name": "SMC Global Securities Limited",
       "source": "NSE"
     },
     {
@@ -63,6 +56,13 @@
       "type": "LISTING",
       "ipo_id": "vishal-nirmiti-limited",
       "name": "Vishal Nirmiti Limited",
+      "source": "NSE"
+    },
+    {
+      "date": "2026-10-16",
+      "type": "CLOSE",
+      "ipo_id": "smc-global-securities-limited",
+      "name": "SMC Global Securities Limited",
       "source": "NSE"
     }
   ]
