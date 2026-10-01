@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "generated_at": "2026-10-01T06:33:47.394443+00:00",
+  "generated_at": "2026-10-01T09:30:25.158685+00:00",
   "events": [
     {
       "date": "2026-10-01",
@@ -21,6 +21,13 @@
       "type": "LISTING",
       "ipo_id": "green-asia-impex-limited",
       "name": "Green Asia Impex Limited",
+      "source": "NSE"
+    },
+    {
+      "date": "2026-10-05",
+      "type": "OPEN",
+      "ipo_id": "r-k-fashion-accessories-limited",
+      "name": "R.K. Fashion Accessories Limited",
       "source": "NSE"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T12:03:24.139297+05:30",
+  "updated_at": "2026-10-01T15:00:03.864508+05:30",
   "data": [
     {
       "company": "Eventions Limited",
@@ -24,6 +24,14 @@
       "close_date": "01/10/26",
       "issue_size": "—",
       "status": "listed"
+    },
+    {
+      "company": "R.K. Fashion Accessories Limited",
+      "exchange": "NSE",
+      "open_date": "05/10/26",
+      "close_date": "Oct 7, 2026",
+      "issue_size": "34.99",
+      "status": "upcoming"
     }
   ]
 }

@@ -1,25 +1,25 @@
 {
-  "updated_at": "2026-10-01T12:03:24.139297+05:30",
+  "updated_at": "2026-10-01T15:00:03.864508+05:30",
   "data": [
     {
       "name": "Vishal Nirmiti Limited",
-      "qib": "0.00",
-      "nii": "0.00",
-      "rii": "0.04",
+      "qib": "0.96",
+      "nii": "0.64",
+      "rii": "0.31",
       "total": "—"
     },
     {
       "name": "Nityas Gems and Jewellery Limited",
       "qib": "0.00",
-      "nii": "0.06",
-      "rii": "0.37",
+      "nii": "0.20",
+      "rii": "1.05",
       "total": "—"
     },
     {
       "name": "Eventions Limited",
-      "qib": "13.09",
-      "nii": "0.00",
-      "rii": "0.01",
+      "qib": "22.51",
+      "nii": "0.18",
+      "rii": "0.05",
       "total": "—"
     }
   ]

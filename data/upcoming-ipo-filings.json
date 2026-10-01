@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-10-01T12:03:24.139297+05:30",
+  "generated_at": "2026-10-01T15:00:03.864508+05:30",
   "source": "IPO Terminal self-heal official-source checker",
-  "count": 0,
-  "ipos": []
+  "count": 1,
+  "ipos": [
+    {
+      "ipo_name": "R.K. Fashion Accessories Limited",
+      "id": "r-k-fashion-accessories-limited",
+      "type": "SME",
+      "exchange": "NSE",
+      "status": "upcoming",
+      "open": "05/10/26",
+      "close": "Oct 7, 2026",
+      "filing_url": "https://www.nseindia.com/static/investor-relations/offer-documents",
+      "verified": true,
+      "http_status": 200,
+      "checked_at": "2026-10-01T15:00:03.864508+05:30"
+    }
+  ]
 }
