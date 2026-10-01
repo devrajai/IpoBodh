@@ -106,7 +106,7 @@
     return list.filter(function (x) { return x && x.name; }).map(function (x) {
       var o = pd(x.open || x.open_date), c = pd(x.close || x.close_date, true);
       var st = String(x.status || '').toLowerCase();
-      x._up = !(st === 'open' || (c && c >= now && (!o || o <= now)));
+      x._up = !((st === 'open' && (!c || c >= now)) || (c && c >= now && (!o || o <= now)));
       x._sme = /sme/i.test(String(x.type || x.board || ''));
       return x;
     });
