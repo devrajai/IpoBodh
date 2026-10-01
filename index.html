@@ -66,7 +66,7 @@ button.link{cursor:pointer;border:0;font:inherit;text-align:center}
 <div class="nav-wrap" id="nav-wrap"><div class="nav-groups">
 <div class="nav-group"><span class="nav-label">IPO Status</span><nav class="nav" id="nav-status"><button data-section="open">🟢 Open</button><button data-section="upcoming">🕐 Upcoming</button><button data-section="closed">⚪ Closed</button></nav></div>
 <div class="nav-group"><span class="nav-label">Market</span><nav class="nav" id="nav-market"><button data-section="listed">📊 Listed</button><button data-section="gmp">📈 GMP Live</button><button data-section="news">📰 News</button><button data-section="brokers">🏦 Brokers</button></nav></div>
-<div class="nav-group"><span class="nav-label">Research & Tools</span><nav class="nav" id="nav-tools"><button data-section="tips">💡 Tips</button><button data-section="glossary">📖 Glossary</button><button data-section="allinone">🧠 Smart Tools</button><button data-section="decision">🧠 Decision</button></nav></div>
+<div class="nav-group"><span class="nav-label">Research & Tools</span><nav class="nav" id="nav-tools"><button data-section="tips">💡 Tips</button><button data-section="glossary">📖 Glossary</button><button data-section="allinone">🧠 Smart Tools</button></nav></div>
 </div></div>
 <main>
 <section id="section-open" class="section glass"><div class="section-title"><span>🟢 Open IPOs</span><button class="close" data-close="open">✕ Close</button></div><div id="open-list" class="content"></div></section>
@@ -82,7 +82,7 @@ button.link{cursor:pointer;border:0;font:inherit;text-align:center}
 <div id="brokers-list" class="broker-list"></div>
 </div></section>
 
-<section id="section-decision" class="section glass"><div class="section-title"><span>🧠 IPO Decision — Apply / Wait / Avoid</span><button class="close" data-close="decision">✕ Close</button></div><div id="decision-list" class="content"></div></section>
+
 <section id="section-tips" class="section glass"><div class="section-title"><span>💡 IPO Tips</span><button class="close" data-close="tips">✕ Close</button></div><div class="content tips">
 <div class="card glass"><b>1 — Read the RHP first, always</b><p>Ten minutes with the Red Herring Prospectus beats a hundred opinions. Go straight to: objects of the issue (where the money is going — repayment of promoter loans is a warning sign), promoter holding before and after the listing, and the risk factors. The RHP / DRHP buttons in Pro Tools → Why & Sources open the document directly.</p></div>
 <div class="card glass"><b>2 — Judge the business, not the buzz</b><p>Look for revenue growth across the last three years, stable or expanding margins, and a real moat. Customer concentration above roughly 25% from one client is a genuine risk in many SME IPOs. A business that needs the IPO to survive is not a business worth owning.</p></div>
@@ -320,7 +320,7 @@ apply();})();
     if (i >= files.length) return;
     var f = files[i++];
     var s = document.createElement("script");
-    s.src = f;
+    s.src = f + '?v=2';
     s.onload = function () { tries[f] = 0; next(); };
     s.onerror = function () {
       tries[f] = (tries[f] || 0) + 1;

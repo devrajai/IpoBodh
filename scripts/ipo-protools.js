@@ -739,7 +739,14 @@
     });
   }
 
-  const tabs = () => [['track', '\uD83C\uDFC6 Track Record'], ['apps', '\uD83D\uDCCB My Apps'], ['plan', '\uD83D\uDC68\u200D\uD83D\uDC69\u200D\uD83D\uDC67 Planner'], ['cal', '\uD83D\uDCC5 Calendar'], ['calc', '\uD83E\uDDE9 Calculator'], ['why', '\u2753 Why & Sources']]
+  function tabDecision(el) {
+    el.innerHTML = '<div class="pt-hint">Apply / Wait / Avoid \u2014 the same read as before, built from live GMP and subscription data.</div>'
+      + '<div id="decision-list" class="content"></div>';
+    if (typeof window.renderDecision === 'function') { try { window.renderDecision(); } catch (e) {} }
+    else { el.innerHTML += '<div class="pt-hint">Decision engine not available.</div>'; }
+  }
+
+  const tabs = () => [['track', '\uD83C\uDFC6 Track Record'], ['apps', '\uD83D\uDCCB My Apps'], ['plan', '\uD83D\uDC68\u200D\uD83D\uDC69\u200D\uD83D\uDC67 Planner'], ['cal', '\uD83D\uDCC5 Calendar'], ['calc', '\uD83E\uDDE9 Calculator'], ['decision', '\uD83E\uDDE0 Decision'], ['why', '\u2753 Why & Sources']]
     .map(t => '<button data-pt="' + t[0] + '" class="' + (tab === t[0] ? 'on' : '') + '">' + t[1] + '</button>').join('');
 
   function render() {
@@ -753,6 +760,7 @@
     else if (tab === 'track') tabTrack(el);
     else if (tab === 'apps') tabApps(el);
     else if (tab === 'plan') tabPlan(el);
+    else if (tab === 'decision') tabDecision(el);
     else if (tab === 'why') tabWhy(el);
     else tabCal(el);
   }
