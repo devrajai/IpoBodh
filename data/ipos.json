@@ -940,16 +940,6 @@
     "status": "allotment"
   },
   {
-    "name": "",
-    "board": "Mainboard",
-    "status": "upcoming"
-  },
-  {
-    "name": "",
-    "board": "Mainboard",
-    "status": "upcoming"
-  },
-  {
     "name": "Kheria Autocomp Limited",
     "open_date": "2026-09-17",
     "close_date": "2026-09-21",
@@ -1021,5 +1011,53 @@
     "share_credit_date": "—",
     "source_url": "https://www.chittorgarh.com/ipo/spectraa-technology-solutions-ipo/2950/",
     "status": "listed"
+  },
+  {
+    "name": "Aggcon Equipments",
+    "board": "Mainboard",
+    "source_url": "https://ipocentral.in/upcoming-ipos-in-october-2026/",
+    "status": "upcoming"
+  },
+  {
+    "name": "Allied Engineering",
+    "board": "Mainboard",
+    "source_url": "https://ipocentral.in/upcoming-ipos-in-october-2026/",
+    "status": "upcoming"
+  },
+  {
+    "name": "Avaada Electro",
+    "board": "Mainboard",
+    "source_url": "https://www.chittorgarh.com/ipo/avaada-electro-ipo/2790/",
+    "status": "upcoming"
+  },
+  {
+    "name": "Curefoods India",
+    "board": "Mainboard",
+    "source_url": "https://ipocentral.in/upcoming-ipos-in-october-2026/",
+    "status": "upcoming"
+  },
+  {
+    "name": "Kanodia Cement",
+    "board": "Mainboard",
+    "source_url": "https://ipocentral.in/upcoming-ipos-in-october-2026/",
+    "status": "upcoming"
+  },
+  {
+    "name": "Monomark Engineering",
+    "board": "Mainboard",
+    "source_url": "https://ipocentral.in/upcoming-ipos-in-october-2026/",
+    "status": "upcoming"
+  },
+  {
+    "name": "Rayzon Solar",
+    "board": "Mainboard",
+    "source_url": "https://ipocentral.in/upcoming-ipos-in-october-2026/",
+    "status": "upcoming"
+  },
+  {
+    "name": "Safex Chemicals",
+    "board": "Mainboard",
+    "source_url": "https://ipocentral.in/upcoming-ipos-in-october-2026/",
+    "status": "upcoming"
   }
 ]
