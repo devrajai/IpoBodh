@@ -258,7 +258,7 @@ function renderGmp(){
     return {name:g.name,issue_price:g.issue_price||'—',gmp:g.gmp||'—',pct:pct||'—',est:g.estimated_listing||'—',s,up,src:g.source};
   });
   const live=!!liveGmp;
-  el.innerHTML=`<div class="gmp-meta"><span class="gmp-badge ${live?'live':'repo'}">${live?'● LIVE — Google Sheet feed':'● repository data'}</span><span>${live?'pulled in real time from the integrated Google Sheet':'updated by the 15-minute data pipeline'}${feedUrl?'':' — connect a live feed via data/feed-config.json'}</span><button class="link ghost" style="margin:0" onclick="refreshLiveGmp(true)">↻ Refresh</button></div>`+
+  el.innerHTML=
   (rows.length?`<div class="table-wrap"><table class="table"><thead><tr><th>IPO</th><th>Status</th><th>Issue price</th><th>GMP</th><th>GMP %</th><th>Est. listing</th><th>Updated</th></tr></thead><tbody>${rows.map(r=>`<tr><td><b>${esc(r.name)}</b></td><td><span class="badge ${r.s.toLowerCase()}">${r.s}</span></td><td>${esc(r.issue_price)}</td><td><b>${esc(r.gmp)}</b></td><td>${esc(r.pct)}</td><td>${esc(r.est)}</td><td>${esc(r.up||'—')}</td></tr>`).join('')}</tbody></table></div><div class="gmp-note">GMP is unofficial grey-market data. It reflects trader sentiment, can be manipulated, and often collapses when the market mood turns. GMP % is computed as GMP ÷ lower price band. Verify everything with the RHP before investing.</div>`:'<div class="empty">No GMP data available right now.</div>');
 }
 async function refreshLiveGmp(force){
