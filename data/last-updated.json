@@ -1,6 +1,4 @@
 {
-  "updated": "2026-10-01T06:34:00.799820Z",
-  "refresh_interval_minutes": 180,
-  "source": "GitHub Actions + NSE/BSE/SEBI public sources",
-  "timezone": "UTC"
+  "updated_at": "2026-10-01T06:43:58.779068+00:00",
+  "source": "google-sheet"
 }
