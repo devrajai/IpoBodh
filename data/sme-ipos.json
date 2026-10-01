@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T21:00:17.906213+05:30",
+  "updated_at": "2026-10-02T00:01:23.295315+05:30",
   "data": [
     {
       "company": "Eventions Limited",
@@ -8,22 +8,6 @@
       "close_date": "Oct 5, 2026",
       "issue_size": "38.12",
       "status": "open"
-    },
-    {
-      "company": "Papadmalji Agro Foods Limited",
-      "exchange": "BSE",
-      "open_date": "29/09/26",
-      "close_date": "01/10/26",
-      "issue_size": "—",
-      "status": "open"
-    },
-    {
-      "company": "Green Asia Impex Limited",
-      "exchange": "BSE",
-      "open_date": "24/09/26",
-      "close_date": "01/10/26",
-      "issue_size": "—",
-      "status": "listed"
     },
     {
       "company": "R.K. Fashion Accessories Limited",

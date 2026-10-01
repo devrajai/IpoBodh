@@ -1,14 +1,14 @@
 {
   "version": "2.0.0",
-  "generated_at": "2026-10-01T15:30:42.256683+00:00",
-  "today_ist": "2026-10-01",
-  "data_updated_at": "2026-10-01T21:00:17.906213+05:30",
-  "ipo_count": 7,
-  "field_coverage_pct": 44.9,
+  "generated_at": "2026-10-01T18:31:45.222793+00:00",
+  "today_ist": "2026-10-02",
+  "data_updated_at": "2026-10-02T00:01:23.295315+05:30",
+  "ipo_count": 5,
+  "field_coverage_pct": 49.5,
   "sources": {
     "NSE": {
       "ok": true,
-      "records": 7,
+      "records": 5,
       "errors": []
     },
     "BSE": {
@@ -50,7 +50,7 @@
       "errors": []
     },
     "PublicAggregators": {
-      "checked_at": "2026-10-01T15:28:00.297462+00:00",
+      "checked_at": "2026-10-01T18:30:49.830068+00:00",
       "sources": {
         "Groww": {
           "ok": false,
@@ -85,15 +85,15 @@
     },
     "ProspectusResearch": {
       "ok": false,
-      "records": 7,
+      "records": 5,
       "matched": 0,
       "errors": [],
-      "checked_at": "2026-10-01T15:28:03.348091+00:00"
+      "checked_at": "2026-10-01T18:30:52.222583+00:00"
     },
     "SeedFallback": {
       "ok": true,
       "records": 0,
-      "checked_at": "2026-10-01T15:30:00.559155+00:00",
+      "checked_at": "2026-10-01T18:31:09.047335+00:00",
       "seed_fundamentals": 32,
       "seed_documents": 13
     },
@@ -103,17 +103,17 @@
       "changed_fields": 0,
       "live_gmp_records": 0,
       "rejected_gmp_records": 0,
-      "checked_at": "2026-10-01T15:30:00.624898+00:00"
+      "checked_at": "2026-10-01T18:31:09.122883+00:00"
     },
     "TranscriptEvidence": {
       "ok": true,
       "records": 0,
-      "checked_at": "2026-10-01T15:30:00.668164+00:00"
+      "checked_at": "2026-10-01T18:31:09.175946+00:00"
     },
     "LiveNews": {
       "ok": true,
       "records": 200,
-      "checked_at": "2026-10-01T15:30:00.802484+00:00",
+      "checked_at": "2026-10-01T18:31:09.336851+00:00",
       "feeds": {
         "Google News · IPO India": {
           "ok": true,
@@ -141,12 +141,12 @@
       "ok": true,
       "records": 13,
       "verified": 5,
-      "checked_at": "2026-10-01T15:30:00.802484+00:00"
+      "checked_at": "2026-10-01T18:31:09.336851+00:00"
     },
     "SelfHeal": {
       "ok": true,
-      "checked_at": "2026-10-01T21:00:17.906213+05:30",
-      "status_repairs": 1,
+      "checked_at": "2026-10-02T00:01:23.295315+05:30",
+      "status_repairs": 0,
       "sme_added": 0,
       "filings": {
         "checked": 21,
@@ -244,62 +244,6 @@
       }
     },
     {
-      "id": "papadmalji-agro-foods-limited",
-      "name": "Papadmalji Agro Foods Limited",
-      "fingerprint": "0ef4c23710d0b46d",
-      "fields": {
-        "price": "—",
-        "size": "—",
-        "lot": "—",
-        "open": "29/09/26",
-        "close": "01/10/26",
-        "allotment": null,
-        "listing": "—",
-        "sub": "—",
-        "sub_qib": null,
-        "sub_nii": null,
-        "sub_retail": null,
-        "gmp": "—",
-        "gmp_pct": "—",
-        "est_list": "—",
-        "pe": "—",
-        "roe": "38.51%",
-        "roce": "46.47%",
-        "growth": "6%",
-        "de": "0.62",
-        "fresh": "—",
-        "ofs": "—"
-      }
-    },
-    {
-      "id": "green-asia-impex-limited",
-      "name": "Green Asia Impex Limited",
-      "fingerprint": "65f00648fd112565",
-      "fields": {
-        "price": "—",
-        "size": "—",
-        "lot": "1600",
-        "open": "24/09/26",
-        "close": "01/10/26",
-        "allotment": null,
-        "listing": "01/10/26",
-        "sub": "—",
-        "sub_qib": null,
-        "sub_nii": null,
-        "sub_retail": null,
-        "gmp": "—",
-        "gmp_pct": "—",
-        "est_list": "—",
-        "pe": "—",
-        "roe": "50.16%",
-        "roce": "20.62%",
-        "growth": "14%",
-        "de": "2.90",
-        "fresh": "—",
-        "ofs": "—"
-      }
-    },
-    {
       "id": "smc-global-securities-limited",
       "name": "SMC Global Securities Limited",
       "fingerprint": "71cbfcac06c2b2f8",
@@ -358,20 +302,6 @@
   ],
   "events": [
     {
-      "date": "2026-09-24",
-      "type": "OPEN",
-      "ipo_id": "green-asia-impex-limited",
-      "name": "Green Asia Impex Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-09-29",
-      "type": "OPEN",
-      "ipo_id": "papadmalji-agro-foods-limited",
-      "name": "Papadmalji Agro Foods Limited",
-      "source": "NSE"
-    },
-    {
       "date": "2026-09-30",
       "type": "OPEN",
       "ipo_id": "eventions-limited",
@@ -390,27 +320,6 @@
       "type": "OPEN",
       "ipo_id": "vishal-nirmiti-limited",
       "name": "Vishal Nirmiti Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-10-01",
-      "type": "CLOSE",
-      "ipo_id": "green-asia-impex-limited",
-      "name": "Green Asia Impex Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-10-01",
-      "type": "CLOSE",
-      "ipo_id": "papadmalji-agro-foods-limited",
-      "name": "Papadmalji Agro Foods Limited",
-      "source": "NSE"
-    },
-    {
-      "date": "2026-10-01",
-      "type": "LISTING",
-      "ipo_id": "green-asia-impex-limited",
-      "name": "Green Asia Impex Limited",
       "source": "NSE"
     },
     {
