@@ -45,7 +45,7 @@
       const b = document.createElement('button');
       b.dataset.section = 'protools';
       b.textContent = '\uD83D\uDE80 Pro Tools';
-      nav.appendChild(b);
+      b.style.display='none';nav.appendChild(b);
     }
     const st = document.createElement('style');
     st.textContent = '.pt-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}.pt-tabs button{border-radius:999px;border:1px solid rgba(148,163,184,.3);background:rgba(148,163,184,.08);color:var(--muted);padding:7px 14px;font-size:12px;font-weight:600;cursor:pointer}.pt-tabs button.on{background:rgba(59,130,246,.15);color:#93c5fd;border-color:rgba(59,130,246,.5)}.pt-tbl{width:100%;border-collapse:collapse;font-size:12px}.pt-tbl th,.pt-tbl td{padding:7px 8px;text-align:left;border-bottom:1px solid rgba(148,163,184,.15)}.pt-tbl th{color:var(--muted);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.4px}.pt-hint{font-size:12px;color:var(--muted);line-height:1.6;margin:6px 0 10px}.pt-in{background:rgba(148,163,184,.1);border:1px solid rgba(148,163,184,.3);border-radius:10px;color:var(--text);padding:8px 10px;font-size:13px;width:110px}.pt-btn{border-radius:10px;border:1px solid rgba(59,130,246,.45);background:rgba(59,130,246,.12);color:#93c5fd;padding:8px 14px;font-size:12.5px;font-weight:700;cursor:pointer}.pt-btn.del{border-color:rgba(239,68,68,.4);background:rgba(239,68,68,.1);color:#ef4444;padding:4px 9px}.pt-btn.win{border-color:rgba(34,197,94,.45);background:rgba(34,197,94,.12);color:#22c55e}.pt-chip{display:inline-block;border-radius:999px;padding:2px 9px;font-size:11px;font-weight:700}.pt-big{font-size:22px;font-weight:800}.pt-mono{font-variant-numeric:tabular-nums}';
