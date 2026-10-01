@@ -76,6 +76,40 @@ jobs:
                   raise SystemExit(f'Empty list: {p}')
               print('OK',name)
           PY
+      - name: Guard against empty/zero data (restore last good if needed)
+        run: |
+          python3 - <<'PY'
+          import json, shutil
+          from pathlib import Path
+          bdir, data = Path('/tmp/ipo-backup'), Path('data')
+          keys = ['ipo-data.json','gmp.json','subscriptions.json','sme-ipos.json',
+                  'terminal-state.json','market-data.json','live-news.json']
+          def count(p):
+              try:
+                  d = json.loads(Path(p).read_text(encoding='utf-8'))
+              except Exception:
+                  return None
+              if isinstance(d, list):
+                  return len(d)
+              if isinstance(d, dict):
+                  for k in ('ipos','gmp','items','rows','data','funds','news'):
+                      if isinstance(d.get(k), list):
+                          return len(d[k])
+                  return len(d)
+              return None
+          restored = []
+          for name in keys:
+              new, old = data / name, bdir / name
+              if not old.exists() or not new.exists():
+                  continue
+              c_new, c_old = count(new), count(old)
+              collapsed = (c_new is None) or (c_new == 0 and (c_old or 0) > 0) \
+                  or (c_old and c_new is not None and c_new < c_old * 0.5)
+              if collapsed:
+                  shutil.copyfile(old, new)
+                  restored.append((name, c_old, c_new))
+          print('restored from backup:', restored if restored else 'none needed')
+          PY
       - name: Write refresh heartbeat
         run: |
           python - <<'PY'

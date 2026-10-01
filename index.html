@@ -6,7 +6,7 @@
 <meta name="description" content="IPO Terminal">
 <title>IPO Terminal</title>
 <style>
-:root{--bg:#0b1011;--text:#f8fafc;--muted:#9aa5ad;--line:rgba(255,255,255,.14);--glass:rgba(255,255,255,.07);--glass2:rgba(255,255,255,.115);--open:#f97316;--up:#ffffff;--closed:#22c55e;--gain:#16a34a;--loss:#dc2626;--link:#3b82f6;--shadow:0 18px 60px rgba(0,0,0,.42)}
+:root{--bg:#0b1011;--text:#f8fafc;--muted:#9aa5ad;--line:rgba(255,255,255,.14);--glass:rgba(255,255,255,.07);--glass2:rgba(255,255,255,.115);--open:#22c55e;--up:#f97316;--closed:#94a3b8;--gain:#16a34a;--loss:#dc2626;--link:#3b82f6;--shadow:0 18px 60px rgba(0,0,0,.42)}
 html.light{--bg:#f7f9fc;--text:#101827;--muted:#64748b;--line:rgba(71,85,105,.16);--glass:rgba(255,255,255,.52);--glass2:rgba(255,255,255,.76);--shadow:0 18px 60px rgba(51,65,85,.12)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:var(--text);font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:radial-gradient(circle at 7% 0%,rgba(59,130,246,.12),transparent 30%),radial-gradient(circle at 93% 3%,rgba(168,85,247,.10),transparent 28%),radial-gradient(circle at 50% 100%,rgba(34,197,94,.06),transparent 34%),var(--bg);background-attachment:fixed}button,a{font:inherit}.glass{background:linear-gradient(135deg,var(--glass2),var(--glass));border:1px solid var(--line);box-shadow:var(--shadow),inset 0 1px 0 rgba(255,255,255,.18);backdrop-filter:blur(26px) saturate(145%);-webkit-backdrop-filter:blur(26px) saturate(145%)}
 .header{margin:12px;padding:18px;border-radius:24px;position:relative}.header h1{margin:0;font-size:26px;letter-spacing:-.5px}.subtitle{display:none}.theme{position:absolute;right:14px;top:14px;width:40px;height:40px;border:1px solid var(--line);border-radius:50%;background:var(--glass2);color:var(--text);cursor:pointer;box-shadow:var(--shadow),inset 0 1px 0 rgba(255,255,255,.2);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
@@ -58,7 +58,7 @@ button.link{cursor:pointer;border:0;font:inherit;text-align:center}
 </style></style>
 <style id="nav-grid-css">#nav-tools.nav{display:grid !important;grid-template-columns:repeat(3,minmax(0,1fr)) !important;gap:8px !important;overflow:visible !important}#nav-tools.nav button{width:100% !important;min-height:46px !important;padding:11px 8px !important;font-size:12.5px !important;white-space:nowrap}</style>
 <style id="perf-css">html{scroll-behavior:smooth;-webkit-tap-highlight-color:transparent}#nav-tools.nav button{backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:0 6px 18px rgba(0,0,0,.18)}</style>
-<style id="tool-nav-fix">/* Coach/Pro Tools buttons are folded into Smart Tools; keep them hidden so they never flash on refresh. */#nav-tools button[data-section="coach"],#nav-tools button[data-section="protools"]{display:none!important}</style><style id="status-colors">.badge.upcoming{color:#0b1220}</style></head>
+</head>
 <body>
 <header class="header glass"><h1>IPO Terminal</h1><div class="subtitle"></div><div class="live-clock"><span>🇮🇳</span><span id="india-date">—</span><span id="india-time">—</span><small>IST</small></div><button id="theme" class="theme" aria-label="Toggle theme">☾</button></header>
 <div class="stats"><div class="stat glass open"><div class="stat-label">OPEN</div><div id="open-count" class="stat-value">0</div></div><div class="stat glass upcoming"><div class="stat-label">UPCOMING</div><div id="upcoming-count" class="stat-value">0</div></div><div class="stat glass closed"><div class="stat-label">CLOSED</div><div id="closed-count" class="stat-value">0</div></div></div>
@@ -261,11 +261,41 @@ function renderGmp(){
   el.innerHTML=
   (rows.length?`<div class="table-wrap"><table class="table"><thead><tr><th>IPO</th><th>Status</th><th>Issue price</th><th>GMP</th><th>GMP %</th><th>Est. listing</th><th>Updated</th></tr></thead><tbody>${rows.map(r=>`<tr><td><b>${esc(r.name)}</b></td><td><span class="badge ${r.s.toLowerCase()}">${r.s}</span></td><td>${esc(r.issue_price)}</td><td><b>${esc(r.gmp)}</b></td><td>${esc(r.pct)}</td><td>${esc(r.est)}</td><td>${esc(r.up||'—')}</td></tr>`).join('')}</tbody></table></div><div class="gmp-note">GMP is unofficial grey-market data. It reflects trader sentiment, can be manipulated, and often collapses when the market mood turns. GMP % is computed as GMP ÷ lower price band. Verify everything with the RHP before investing.</div>`:'<div class="empty">No GMP data available right now.</div>');
 }
+function csvRows(txt){const out=[];let row=[],cur='',q=false;
+  for(let i=0;i<txt.length;i++){const c=txt[i];
+    if(q){ if(c==='"'){ if(txt[i+1]==='"'){cur+='"';i++} else q=false } else cur+=c }
+    else if(c==='"'){q=true}
+    else if(c===','){row.push(cur);cur=''}
+    else if(c==='\n'){row.push(cur);out.push(row);row=[];cur=''}
+    else if(c!=='\r'){cur+=c}}
+  if(cur!==''||row.length){row.push(cur);out.push(row)}
+  return out}
 async function refreshLiveGmp(force){
   if(!feedUrl){renderGmp();return}
-  try{const r=await fetch(feedUrl+'?v='+Date.now(),{cache:'no-store'});const j=await r.json();if(!j||!j.ok)throw 0;
-    liveGmp=(j.open||[]).concat(j.upcoming||[]).map(x=>({name:x.name,issue_price:(x.priceLow&&x.priceHigh)?'₹'+x.priceLow+'-'+x.priceHigh:(x.priceLow?'₹'+x.priceLow:'—'),gmp:(x.gmp!=null&&x.gmp!=='')?'₹'+x.gmp:'—',gmp_pct:(x.gmpPct!=null&&x.gmpPct!=='')?(x.gmpPct>0?'+':'')+x.gmpPct+'%':'—',estimated_listing:'—',updated_at:j.updated,source:'live'}));
-  }catch(e){if(force&&liveGmp===null)alert('Live feed unreachable — showing repository data.');liveGmp=liveGmp}
+  try{
+    const url=feedUrl+(feedUrl.indexOf('?')>=0?'&':'?')+'v='+Date.now();
+    const r=await fetch(url,{cache:'no-store'});const txt=await r.text();
+    let live=null;
+    try{const j=JSON.parse(txt);
+      if(j&&(j.ok||j.open||j.upcoming))live=(j.open||[]).concat(j.upcoming||[]).map(x=>({name:x.name,issue_price:(x.priceLow&&x.priceHigh)?'\u20b9'+x.priceLow+'-'+x.priceHigh:(x.priceLow?'\u20b9'+x.priceLow:'\u2014'),gmp:(x.gmp!=null&&x.gmp!=='')?'\u20b9'+x.gmp:'\u2014',gmp_pct:(x.gmpPct!=null&&x.gmpPct!=='')?(x.gmpPct>0?'+':'')+x.gmpPct+'%':'\u2014',estimated_listing:'\u2014',updated_at:j.updated,source:'live'}));
+    }catch(_){}
+    if(!live){
+      const rows=csvRows(txt);
+      if(rows.length>1){
+        const h=rows[0].map(function(v){return String(v).trim().toLowerCase()});
+        const iN=h.indexOf('name'),iG=h.indexOf('gmp');
+        const iP=h.indexOf('gmppct')>=0?h.indexOf('gmppct'):h.indexOf('gmp %');
+        const iL=h.indexOf('pricelow'),iH=h.indexOf('pricehigh');
+        if(iN>=0)live=rows.slice(1).filter(function(r){return r[iN]&&String(r[iN]).trim()}).map(function(r){
+          const pv=(iP>=0&&r[iP]!=='')?(String(r[iP]).charAt(0)==='-'?String(r[iP]):'+'+String(r[iP])):'\u2014';
+          return {name:String(r[iN]).trim(),
+            issue_price:(iL>=0&&iH>=0&&r[iL]&&r[iH])?('\u20b9'+r[iL]+'-'+r[iH]):(iL>=0&&r[iL]?'\u20b9'+r[iL]:'\u2014'),
+            gmp:(iG>=0&&r[iG]!=='')?'\u20b9'+r[iG]:'\u2014',gmp_pct:pv,estimated_listing:'\u2014',updated_at:'',source:'sheet'};
+        });
+      }
+    }
+    if(live&&live.length)liveGmp=live;
+  }catch(e){if(force&&liveGmp===null)alert('Live feed unreachable \u2014 showing saved data.');}
   renderGmp();
 }
 async function loadFeedConfig(){try{const r=await fetch('data/feed-config.json',{cache:'no-store'});const j=await r.json();feedUrl=String(j.feed_url||'').trim()}catch(e){feedUrl=''}}
@@ -320,7 +350,7 @@ apply();})();
     if (i >= files.length) return;
     var f = files[i++];
     var s = document.createElement("script");
-    s.src = f + '?v=3';
+    s.src = f + '?v=2';
     s.onload = function () { tries[f] = 0; next(); };
     s.onerror = function () {
       tries[f] = (tries[f] || 0) + 1;
