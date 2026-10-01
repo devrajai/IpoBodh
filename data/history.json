@@ -155,8 +155,48 @@
     "gmp_pct": 26.5,
     "listing_est": 344.0
    }
+  ],
+  "Vishal Nirmiti Limited": [
+   {
+    "d": "2026-10-01",
+    "gmp": 6.0,
+    "gmp_pct": 2.7,
+    "listing_est": 226.0
+   }
+  ],
+  "Nityas Gems and Jewellery Limited": [
+   {
+    "d": "2026-10-01",
+    "gmp": 5.0,
+    "gmp_pct": 6.7,
+    "listing_est": 80.0
+   }
+  ],
+  "Eventions Limited": [
+   {
+    "d": "2026-10-01",
+    "gmp": 0.0,
+    "gmp_pct": 0.0,
+    "listing_est": 118.0
+   }
+  ],
+  "Shah Investor's Home Limited": [
+   {
+    "d": "2026-10-01",
+    "gmp": 14.0,
+    "gmp_pct": 8.4,
+    "listing_est": 181.0
+   }
+  ],
+  "Srit India Limited": [
+   {
+    "d": "2026-10-01",
+    "gmp": 33.0,
+    "gmp_pct": 25.4,
+    "listing_est": 163.0
+   }
   ]
  },
  "market": [],
- "updated": "2026-09-30T01:50:32.515217+00:00"
+ "updated": "2026-10-01T01:56:37.523036+00:00"
 }
