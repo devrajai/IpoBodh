@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T09:25:53.810234+00:00",
+  "updated_at": "2026-10-02T12:30:13.173985+00:00",
   "india": [
     {
       "name": "Nifty 50",
@@ -100,36 +100,18 @@
       "change_pct": -2.33
     }
   ],
-  "world": [
-    {
-      "price": 23972.29,
-      "change": -640.98,
-      "change_pct": -2.6,
-      "name": "Hang Seng (HK)",
-      "symbol": "^HSI"
-    }
-  ],
-  "commodities": [
-    {
-      "price": 4216.5,
-      "change": 14.2,
-      "change_pct": 0.34,
-      "name": "Gold ($/oz)",
-      "symbol": "GC=F"
-    }
-  ],
+  "world": [],
+  "commodities": [],
   "fx": [
     {
-      "price": 96.3,
-      "change": -0.01,
-      "change_pct": -0.01,
       "name": "USD/INR",
-      "symbol": "INR=X"
+      "symbol": "USDINR",
+      "price": 96.33,
+      "change": null,
+      "change_pct": null
     }
   ],
-  "derived": {
-    "gold_inr_per_10g": 130547.67
-  },
+  "derived": {},
   "sheet_listed_ipos": [
     [
       "INDIA IPO TRACKER QUICK STATS",
