@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T12:30:13.173985+00:00",
+  "updated_at": "2026-10-02T15:26:14.577630+00:00",
   "india": [
     {
       "name": "Nifty 50",
@@ -106,7 +106,7 @@
     {
       "name": "USD/INR",
       "symbol": "USDINR",
-      "price": 96.33,
+      "price": 96.32,
       "change": null,
       "change_pct": null
     }
