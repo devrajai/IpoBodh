@@ -168,6 +168,12 @@
     "gmp": 6.0,
     "gmp_pct": 2.7,
     "listing_est": 226.0
+   },
+   {
+    "d": "2026-10-03",
+    "gmp": 6.0,
+    "gmp_pct": 2.7,
+    "listing_est": 226.0
    }
   ],
   "Nityas Gems and Jewellery Limited": [
@@ -182,6 +188,12 @@
     "gmp": 5.0,
     "gmp_pct": 6.7,
     "listing_est": 80.0
+   },
+   {
+    "d": "2026-10-03",
+    "gmp": 5.0,
+    "gmp_pct": 6.7,
+    "listing_est": 80.0
    }
   ],
   "Eventions Limited": [
@@ -193,6 +205,12 @@
    },
    {
     "d": "2026-10-02",
+    "gmp": 0.0,
+    "gmp_pct": 0.0,
+    "listing_est": 118.0
+   },
+   {
+    "d": "2026-10-03",
     "gmp": 0.0,
     "gmp_pct": 0.0,
     "listing_est": 118.0
@@ -216,5 +234,5 @@
   ]
  },
  "market": [],
- "updated": "2026-10-02T01:57:18.297740+00:00"
+ "updated": "2026-10-03T01:55:10.216564+00:00"
 }
